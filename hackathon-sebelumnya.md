@@ -26,45 +26,70 @@ Pemerintah Nasional:
 - Kemenkopolhukham
 - Kemenkominfo
 - Kemendag
-- Telkom Indonesia
-- Pertamina
+- Telkom Indonesia (Internet Provider)
+- Pertamina (Prizes)
 
-IT Community:
+Communities:
 
-- [Code4Nation](http://code4nation.id/)
-- [Data Science Indonesia](http://datascience.or.id/)
-- [Developer Mengajar](http://teknojurnal.com/developer-mengajar/)
-- [Kawal Menteri](http://kawalmenteri.org/)
+- [Code4Nation](http://code4nation.id)
+- [CodePolitan](http://codepolitan.com)
+- [Data Science Indonesia](https://datascience.or.id)
+- [Demokreatif](https://www.facebook.com/demokreatif)
+- [Developer Mengajar](http://teknojurnal.com/developer-mengajar)
+- [Kawal Menteri](http://kawalmenteri.org)
 
-IT Startups Industry di Indonesia:
+Startups Industry di Indonesia:
 
-- East Ventures - http://east.vc/
-- Kudo - http://kudo.co.id/
-- TechInAsia Indonesia - https://id.techinasia.com/
-- Sribu - http://www.sribu.com/
-- IDCloudHost - https://idcloudhost.com/
-- CloudKilat - http://cloudkilat.id/
-- appsterize - http://appsterize.com/
-- Otten Coffee - http://www.ottencoffee.co.id/
-- UTees - https://utees.me/
-- Sebangsa - https://sebangsa.com/
-- BerryKitchen - http://berrykitchen.com/
-- CodePolitan - http://www.codepolitan.com/
-- SMDV - Sinar Mas Digital Ventures
-- Movio Initiative - http://movio-screen.net/
-- Bilna - http://www.bilna.com/
-- MatahariMall - https://www.mataharimall.com/
-- Scoop - http://www.getscoop.com/
-- Ralali - http://www.ralali.com/
-- MediaTrac - http://mediatrac.co.id/
-- Kaskus - http://www.kaskus.co.id/
-- Tokopedia - https://www.tokopedia.com/
-- Traveloka - https://www.traveloka.com/
+- Project Management: [Kudo](http://kudo.co.id)
+- Event Organizer: [Tech in Asia](https://id.techinasia.com)
+- Logo MDK! Contest: [Sribu](https://sribu.com)
+- Cloud Hosting & API Providers: [IdCloudHost](https://idcloudhost.com), [CloudKilat](http://cloudkilat.id), [MediaTrac](http://mediatrac.co.id), & [Sebangsa](https://sebangsa.com)
+- Mobile App: [appsterize](http://appsterize.com)
+- Coffee Provider: [Otten Coffee](http://ottencoffee.co.id)
+- T-Shirts: SMDV & [UTees.me](https://utees.me)
+- Documentation: [Movio Initiative](http://movio-initiative.net)
+- Lunch Provider: [BerryKitchen](http://berrykitchen.com) & [MatahariMall](https://mataharimall.com)
+- Toiletries: [Bilna](http://bilna.com)
+- Printing Partner: [Scoop](http://getscoop.com)
+- Breakfast Provider: [Ralali](http://ralali.com)
+- Dinner Provider: [Kaskus](https://kaskus.co.id) & [Tokopedia](https://tokopedia.com)
+- Workshops: [EV Hive](https://www.facebook.com/East-Ventures-Hive-1768128830080613/timeline/)
 
 Khusus untuk yang telah berkontribusi materi promosi, terima kasih kembali:
 
 - Eko Harsoselanto dan kawan-kawan @demokreatif yang membuatkan backdrop acara.
-- Faikar Izzani yang membuatkan gambar pengantar rilis pers pemerintah.
+- Faikar Izzani yang membuatkan gambar pengantar rilis pers bersama.
 - Christina Abigail dan Andre Gunawan yang membuatkan infografis komoditas.
 
 Serta banyak kontribusi individu-individu lainnya pada acara tersebut, terima kasih!
+
+![]({{ site.baseurl }}/img/at.png)
+![]({{ site.baseurl }}/img/bk.png)
+![]({{ site.baseurl }}/img/bn.png)
+![]({{ site.baseurl }}/img/c4n.png)
+![]({{ site.baseurl }}/img/ch.png)
+![]({{ site.baseurl }}/img/ck.png)
+![]({{ site.baseurl }}/img/cp.png)
+![]({{ site.baseurl }}/img/dk.png)
+![]({{ site.baseurl }}/img/ev.png)
+![]({{ site.baseurl }}/img/kd.png)
+![]({{ site.baseurl }}/img/kk.png)
+![]({{ site.baseurl }}/img/km.png)
+![]({{ site.baseurl }}/img/kp.png)
+![]({{ site.baseurl }}/img/MDK.png)
+![]({{ site.baseurl }}/img/mi.png)
+![]({{ site.baseurl }}/img/mm.png)
+![]({{ site.baseurl }}/img/mt.png)
+![]({{ site.baseurl }}/img/ot.png)
+![]({{ site.baseurl }}/img/pm.png)
+![]({{ site.baseurl }}/img/rl.png)
+![]({{ site.baseurl }}/img/sb.png)
+![]({{ site.baseurl }}/img/sc.png)
+![]({{ site.baseurl }}/img/sm.png)
+![]({{ site.baseurl }}/img/sr.png)
+![]({{ site.baseurl }}/img/ta.png)
+![]({{ site.baseurl }}/img/ti.png)
+![]({{ site.baseurl }}/img/tp.png)
+![]({{ site.baseurl }}/img/tv.png)
+![]({{ site.baseurl }}/img/ut.png)
+![]({{ site.baseurl }}/img/vd.png)
