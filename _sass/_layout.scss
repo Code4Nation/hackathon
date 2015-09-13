@@ -1,0 +1,219 @@
+/**
+ * Site header
+ */
+.site-header {
+    border-bottom: 1px solid $grey-color-light;
+    min-height: 56px;
+
+    // Positioning context for the mobile navigation icon
+    position: relative;
+}
+
+.site-title {
+    font-size: 26px;
+    line-height: 56px;
+    letter-spacing: -1px;
+    margin-bottom: 0;
+    float: left;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: $spacing-unit;
+    text-decoration: none;
+
+    &,
+    &:visited {
+        color: $grey-color-dark;
+    }
+}
+
+.site-nav {
+    padding-right: $spacing-unit;
+    float: right;
+    line-height: $spacing-unit;
+    margin-top: 10px;
+
+    .menu-icon {
+        display: none;
+    }
+
+    .page-link {
+        color: lighten($text-color, 30%);
+        font-size: 14px;
+        font-weight: 400;
+        line-height: $base-line-height;
+        text-decoration: none;
+        vertical-align: bottom;
+
+        // Gaps between nav items, but not on the first one
+        &:not(:first-child) {
+            margin-left: 20px;
+        }
+    }
+
+    @include media-query($on-palm) {
+        position: absolute;
+        top: 9px;
+        right: 30px;
+        background-color: $background-color;
+        border: 1px solid $grey-color-light;
+        border-radius: 5px;
+        text-align: right;
+
+        .menu-icon {
+            display: block;
+            float: right;
+            height: 26px;
+            line-height: 0;
+            padding-top: 10px;
+            padding-left: 10px;
+            text-align: center;
+            text-decoration: none;
+
+            > svg {
+                width: 18px;
+                height: 15px;
+
+                path {
+                    fill: $grey-color-dark;
+                }
+            }
+            span {
+                padding-bottom: 8px;
+                padding-left: 32px;
+            }
+        }
+
+        .trigger {
+            clear: both;
+            display: none;
+        }
+
+        &:hover .trigger {
+            display: block;
+            padding-bottom: 5px;
+        }
+
+        .page-link {
+            display: block;
+            padding: 5px 10px;
+        }
+    }
+}
+
+
+
+/**
+ * Site footer
+ */
+.site-footer {
+    background-color: #1d1d1d;
+    color: #b7b7b7;
+    font-size: 12px;
+    padding: 12px 0;
+    text-align: center;
+}
+
+.footer-heading {
+    font-size: 18px;
+    margin-bottom: $spacing-unit / 2;
+}
+
+.contact-list,
+.social-media-list {
+    list-style: none;
+    margin-left: 0;
+}
+
+.footer-col-wrapper {
+    font-size: 15px;
+    color: $grey-color;
+    margin-left: -$spacing-unit / 2;
+    @extend %clearfix;
+}
+
+.footer-col {
+    float: left;
+    margin-bottom: $spacing-unit / 2;
+    padding-left: $spacing-unit / 2;
+}
+
+.footer-col-1 {
+    width: -webkit-calc(35% - (#{$spacing-unit} / 2));
+    width:         calc(35% - (#{$spacing-unit} / 2));
+}
+
+.footer-col-2 {
+    width: -webkit-calc(20% - (#{$spacing-unit} / 2));
+    width:         calc(20% - (#{$spacing-unit} / 2));
+}
+
+.footer-col-3 {
+    width: -webkit-calc(45% - (#{$spacing-unit} / 2));
+    width:         calc(45% - (#{$spacing-unit} / 2));
+}
+
+/**
+ * Page content
+ */
+.page-content {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.page-heading {
+    font-size: 20px;
+}
+
+.post-list {
+    margin-left: 0;
+    list-style: none;
+
+    > li {
+        margin-bottom: $spacing-unit;
+    }
+}
+
+.post-meta {
+    font-size: $small-font-size;
+    color: $grey-color;
+}
+
+.post-link {
+    display: block;
+    font-size: 24px;
+}
+
+
+
+/**
+ * Posts
+ */
+.post-header {
+    margin-bottom: $spacing-unit;
+    background-color: #1d1d1d;
+}
+
+.post-title {
+    color: #fdfdfd;
+    font-size: 24px;
+    padding: 24px calc(#{$spacing-unit} * 2);
+}
+
+.post-content {
+    margin-bottom: $spacing-unit;
+    padding: 0 calc(#{$spacing-unit} * 2);
+
+    h2 {
+        font-size: 32px;
+        font-weight: 400;
+        margin: 0;
+    }
+
+    h3 {
+        font-size: 26px;
+    }
+
+    h4 {
+        font-size: 20px;
+    }
+}
