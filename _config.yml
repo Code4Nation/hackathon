@@ -1,0 +1,13 @@
+title: Hackathon Merdeka
+email: hackathon@code4nation.org
+url: "http://hackathonmerdeka.id"
+logo: "OOOOimg"
+markdown: kramdown
+timezone: "Asia/Jakarta"
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
