@@ -1,5 +1,5 @@
 # Current domain: hackathonmerdeka.id
-12345678901234567890123456789012345678901234567890123456789012345678901234567890
+
 So, originally micro-site for Code4Nation's first hackathon is maintained by
 @sabarr and his friends at Tech in Asia, using Wordpress. So there will be
 traces of their design here and there. By the way, thank you!
