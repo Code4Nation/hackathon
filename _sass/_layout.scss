@@ -183,8 +183,14 @@
 }
 .thumb{
     background-color: transparent;
-	padding-top:100px;
+    padding-top: 150px;
+	
+	img{
+	    width: 100%;
+		background-color: rgba(0,0,0,0.3);
+	}
 }
+
 .page-content {
     padding-top: 0;
     padding-bottom: 0;
