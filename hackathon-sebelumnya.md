@@ -8,14 +8,14 @@ order: 7
 - - -
 TIGA TERBAIK:
 
-- Tim Enjel Salsabila dengan aplikasi: Bawang 5Kg
-- Tim Pasar Laut dengan aplikasi: Primoditi
-- Tim Coding Stelsel dengan aplikasi: Pantau Harga
+- Tim Enjel Salsabila dengan aplikasi: [Bawang 5Kg](https://code4nation.id/c/mdk/tim-5kg)
+- Tim Pasar Laut dengan aplikasi: [Primoditi](https://code4nation.id/c/mdk/tim-primoditi)
+- Tim Coding Stelsel dengan aplikasi: [Pantau Harga](https://code4nation.id/c/mdk/tim-coding-stelsel)
 
 SPECIAL CATEGORY:
 
-- Cakupan Pengguna Terluas (Sistem SMS + Kodepos): Tim Alfa Orion dengan aplikasi: Ricekicker
-- Solusi Paling Out of the Box: Tim Baculsoft dengan aplikasi: SiKerang
+- Cakupan Pengguna Terluas (Sistem SMS + Kodepos): Tim Alfa Orion dengan aplikasi: [Ricekicker](https://code4nation.id/c/mdk/tim-alpha-orion)
+- Solusi Paling Out of the Box: Tim Baculsoft dengan aplikasi: [SiKerang](https://code4nation.id/c/mdk/tim-baculsoft)
 
 ##Partner Hackathon Merdeka Pertama
 - - -
