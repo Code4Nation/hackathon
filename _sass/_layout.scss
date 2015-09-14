@@ -103,7 +103,7 @@
             display: block;
             padding: 10px 20px;
         }
-		.page-link:{
+		.page-link:hover{
 		  background-color:black;
 		  color:white;
 		}
@@ -209,7 +209,7 @@
     padding: 24px calc(#{$spacing-unit} * 2);
 	
 	@include media-query($on-palm) {
-	   padding: 24px calc(#{$spacing-unit} / 2);
+	   padding: 30px 10px;
 	}
 }
 
