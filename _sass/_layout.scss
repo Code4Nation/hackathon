@@ -295,4 +295,23 @@
     max-width: 640px;
     text-align: center;
 	padding-bottom: 30px;
+	
+	 iframe{
+	    width: 800px;
+        height: 450px;
+	 }
+	 
+	 @include media-query($on-palm) {
+	    iframe{
+	    width: 320px;
+        height: 200px;
+	   }
+	}
+}
+.img-circle-mdk{
+width:150px;
+height:150px;
+border-radius:50%;
+text-align:center;
+vertical-align:middle;
 }
