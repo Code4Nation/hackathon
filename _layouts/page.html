@@ -6,7 +6,12 @@ layout: default
 {% if page.title == "Teras" %}
 <div class="image"></div>
 <div class="jumbotron">
-      <div class="container"><img src="/hackathon/img/merdeka.png" alt="Hackathon Merdeka"></div>
+      <div class="container text-center">
+	  <div class="thumb flip">
+	  <img src="/hackathon/img/merdeka.png" alt="Hackathon Merdeka">
+	  </div>
+	  <div class="row"> </div>
+	  </div>
 </div>
 
 
@@ -18,7 +23,7 @@ layout: default
     <h1 class="container post-title">{{ page.title }}</h1>
   </header>
 
-  <article class="container post-content text-center">
+  <article class="container post-content">
     {{ content }}
   </article>
 {% endif %}
