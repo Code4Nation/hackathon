@@ -29,6 +29,12 @@
 	}
 }
 
+.text-white-mdk{
+   color:white;
+   @include media-query($on-palm) {
+      color:#5e5e5e;
+   }
+}
 .site-nav {
     padding-right: $spacing-unit;
     float: right;
@@ -101,10 +107,10 @@
         .page-link {
             display: block;
             padding: 10px 20px;
+			
         }
 		.page-link:hover{
-		  background-color:black;
-		  color:white;
+		  font-weight:500;
 		}
     }
 }
