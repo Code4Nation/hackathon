@@ -2,9 +2,8 @@
  * Site header
  */
 .site-header {
-    border-bottom: 1px solid $grey-color-light;
+    border-bottom: 1px solid #5e5e5e;
     min-height: 56px;
-
     // Positioning context for the mobile navigation icon
     position: relative;
 }
@@ -29,6 +28,7 @@
 	   padding-left: calc(#{$spacing-unit} / 2);
 	}
 }
+
 
 .site-nav {
     padding-right: $spacing-unit;
@@ -91,6 +91,7 @@
         .trigger {
             clear: both;
             display: none;
+			padding-top: 15px;
         }
 
         &:hover .trigger {
@@ -101,15 +102,31 @@
         .page-link {
             display: block;
             padding: 10px 20px;
+			
         }
-		.page-link:{
-		  background-color:black;
-		  color:white;
+		.page-link:hover{
+		  font-weight:700;
 		}
     }
 }
 
+.site-nav .text-white-mdk{
+   color:white;
+   
+   &:hover{
+      font-weight:700;
+   }
+   
+   @include media-query($on-palm) {
+      color:#5e5e5e;
+   }
+}
 
+@include media-query($on-palm) {
+      .site-nav .text-white-mdk{
+	   color:#5e5e5e;
+	  }
+   }
 
 /**
  * Site footer
@@ -164,6 +181,41 @@
 /**
  * Page content
  */
+ .post{
+    min-height: 600px;
+ }
+ 
+ .image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-position: center 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 730px;
+	background-image: url('/hackathon/img/hackathon-wallpaper-04.png');
+	z-index:-1;
+}
+.jumbotron{
+    background-color: transparent;
+	padding-bottom:250px;
+	
+	@include media-query($on-palm) {
+		padding-bottom:350px;
+	}
+	
+}
+.thumb{
+    background-color: transparent;
+    padding-top: 150px;
+	
+	img{
+	    width: 100%;
+		background-color: rgba(0,0,0,0.3);
+	}
+}
+
 .page-content {
     padding-top: 0;
     padding-bottom: 0;
@@ -199,22 +251,24 @@
  */
 .post-header {
     margin-bottom: $spacing-unit;
-    background-color: #1d1d1d;
+    background-color: transparent;
+    background-image: url('/hackathon/img/7-300x187.jpg');
+    background-repeat: repeat-x;
 }
 
 .post-title {
     color: #fdfdfd;
     font-size: 24px;
-    padding: 24px calc(#{$spacing-unit} * 2);
+    padding: 30px 10px;
 	
 	@include media-query($on-palm) {
-	   padding: 24px calc(#{$spacing-unit} / 2);
+	   padding: 30px calc(#{$spacing-unit} / 2);
 	}
 }
 
 .post-content {
     margin-bottom: $spacing-unit;
-    padding: 0 calc(#{$spacing-unit} * 2);
+    padding: 0px 10px;
 	
 	@include media-query($on-palm) {
 	  padding: 0 calc(#{$spacing-unit} / 2);
@@ -224,6 +278,7 @@
         font-size: 32px;
         font-weight: 400;
         margin: 0;
+		margin-bottom:20px;
     }
 
     h3 {
@@ -233,4 +288,54 @@
     h4 {
         font-size: 20px;
     }
+	p{
+		padding-top:20px;
+	}
+}
+
+.module {
+    position: relative;
+    display: block;
+    padding: 50px 20px;
+    overflow: hidden;
+    margin-top: -1px;
+}
+.grey {
+    background-color: #edeef0;
+	}
+	.white {
+    background-color: white;
+	}
+	.red {
+    background-color: #bb2526;
+	color:white;
+	}
+.teaser {
+    display: block;
+    margin: 0 auto;
+    max-width: 800px;
+    text-align: center;
+	padding-bottom: 30px;
+	
+	 iframe{
+	    width: 800px;
+        height: 450px;
+	 }
+	 
+	 @include media-query($on-palm) {
+	    iframe{
+	    width: 320px;
+        height: 200px;
+	   }
+	}
+}
+.img-circle-mdk{
+width:150px;
+height:150px;
+border-radius:50%;
+text-align:center;
+vertical-align:middle;
+ background-color: #bb2526;
+	color:white;
+	font-size: 70pt;
 }
