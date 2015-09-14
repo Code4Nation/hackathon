@@ -105,13 +105,18 @@
 			
         }
 		.page-link:hover{
-		  font-weight:500;
+		  font-weight:700;
 		}
     }
 }
 
 .site-nav .text-white-mdk{
    color:white;
+   
+   &:hover{
+      font-weight:700;
+   }
+   
    @include media-query($on-palm) {
       color:#5e5e5e;
    }
