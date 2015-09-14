@@ -185,7 +185,7 @@
 	padding-bottom:250px;
 	
 	@include media-query($on-palm) {
-	padding-bottom:350px;
+		padding-bottom:350px;
 	}
 	
 }
