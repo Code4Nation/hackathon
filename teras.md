@@ -7,7 +7,7 @@ order: 1
 ## Hackathon Merdeka 2.0
 - - -
 
-Setelah sukses menyelenggarakan Hackathon Merdeka yang pertama pada tanggal 22-23 Agustus 2015 lalu....
+Setelah sukses menyelenggarakan Hackathon Merdeka yang pertama pada tanggal 22-23 Agustus 2015 lalu.
 
 Akan diadakan kembali Hackathon Merdeka dalam waktu dekat, serentak di berbagai kota.
 

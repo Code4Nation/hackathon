@@ -182,6 +182,12 @@
 }
 .jumbotron{
     background-color: transparent;
+	padding-bottom:250px;
+	
+	@include media-query($on-palm) {
+	padding-bottom:350px;
+	}
+	
 }
 .thumb{
     background-color: transparent;
@@ -288,4 +294,5 @@
     margin: 0 auto;
     max-width: 640px;
     text-align: center;
+	padding-bottom: 30px;
 }
