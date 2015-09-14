@@ -11,6 +11,6 @@ Setelah sukses menyelenggarakan Hackathon Merdeka yang pertama di Gedung Krida B
 
 Akan diadakan kembali Hackathon Merdeka dalam waktu dekat, serentak pada berbagai kota.
 
-Besar harapan ini bisa menjadi sebuah bentuk "Sumpah Pemuda" versi modern.
+Harapan kami, ini bisa menjadi sebuah bentuk "Sumpah Pemuda" versi modern.
 
 Merdeka Dengan Kode, MDK!
