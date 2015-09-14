@@ -24,6 +24,10 @@
     &:visited {
         color: $grey-color-dark;
     }
+	
+	@include media-query($on-palm) {
+	   padding-left: calc(#{$spacing-unit} / 2);
+	}
 }
 
 .site-nav {
@@ -53,19 +57,20 @@
     @include media-query($on-palm) {
         position: absolute;
         top: 9px;
-        right: 30px;
+        right: calc(#{$spacing-unit} / 2);
         background-color: $background-color;
         border: 1px solid $grey-color-light;
         border-radius: 5px;
         text-align: right;
+		padding:10px;
 
         .menu-icon {
             display: block;
             float: right;
-            height: 26px;
             line-height: 0;
+            /*height: 26px;
             padding-top: 10px;
-            padding-left: 10px;
+            padding-left: 10px;*/
             text-align: center;
             text-decoration: none;
 
@@ -78,8 +83,8 @@
                 }
             }
             span {
-                padding-bottom: 8px;
-                padding-left: 32px;
+                /*padding-bottom: 8px;
+                padding-left: 32px;*/
             }
         }
 
@@ -95,8 +100,12 @@
 
         .page-link {
             display: block;
-            padding: 5px 10px;
+            padding: 10px 20px;
         }
+		.page-link:{
+		  background-color:black;
+		  color:white;
+		}
     }
 }
 
@@ -197,11 +206,19 @@
     color: #fdfdfd;
     font-size: 24px;
     padding: 24px calc(#{$spacing-unit} * 2);
+	
+	@include media-query($on-palm) {
+	   padding: 24px calc(#{$spacing-unit} / 2);
+	}
 }
 
 .post-content {
     margin-bottom: $spacing-unit;
     padding: 0 calc(#{$spacing-unit} * 2);
+	
+	@include media-query($on-palm) {
+	  padding: 0 calc(#{$spacing-unit} / 2);
+	}
 
     h2 {
         font-size: 32px;
