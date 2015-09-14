@@ -215,7 +215,7 @@
 
 .post-content {
     margin-bottom: $spacing-unit;
-    padding: 0 calc(#{$spacing-unit} * 2);
+    padding: 0px 10px;
 	
 	@include media-query($on-palm) {
 	  padding: 0 calc(#{$spacing-unit} / 2);
