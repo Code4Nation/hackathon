@@ -29,12 +29,7 @@
 	}
 }
 
-.text-white-mdk{
-   color:white;
-   @include media-query($on-palm) {
-      color:#5e5e5e;
-   }
-}
+
 .site-nav {
     padding-right: $spacing-unit;
     float: right;
@@ -115,7 +110,12 @@
     }
 }
 
-
+.text-white-mdk{
+   color:white;
+   @include media-query($on-palm) {
+      color:#5e5e5e;
+   }
+}
 
 /**
  * Site footer
