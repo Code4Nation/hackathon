@@ -110,12 +110,18 @@
     }
 }
 
-.text-white-mdk{
+.site-nav .text-white-mdk{
    color:white;
    @include media-query($on-palm) {
       color:#5e5e5e;
    }
 }
+
+@include media-query($on-palm) {
+      .site-nav .text-white-mdk{
+	   color:#5e5e5e;
+	  }
+   }
 
 /**
  * Site footer
