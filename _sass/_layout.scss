@@ -265,3 +265,27 @@
         font-size: 20px;
     }
 }
+
+.module {
+    position: relative;
+    display: block;
+    padding: 38px 20px;
+    overflow: hidden;
+    margin-top: -1px;
+	
+	.grey {
+    background-color: #edeef0;
+	}
+	.white {
+    background-color: white;
+	}
+	.red {
+    background-color: #bb2526;
+	}
+}
+.teaser {
+    display: block;
+    margin: 0 auto;
+    max-width: 640px;
+    text-align: center;
+}
