@@ -4,13 +4,13 @@ permalink: /
 order: 1
 ---
 
-## Hackathon Merdeka v2
+## Hackathon Merdeka 2.0
 - - -
 
-Setelah sukses menyelenggarakan Hackathon Merdeka yang pertama di Gedung Krida Bhakti Sekretariat Negara, pada tanggal 22-23 Agustus 2015 lalu....
+Setelah sukses menyelenggarakan Hackathon Merdeka yang pertama pada tanggal 22-23 Agustus 2015 lalu....
 
-Akan diadakan kembali Hackathon Merdeka dalam waktu dekat, serentak pada berbagai kota.
+Akan diadakan kembali Hackathon Merdeka dalam waktu dekat, serentak di berbagai kota.
 
-Harapan kami, ini bisa menjadi sebuah bentuk "Sumpah Pemuda" versi modern.
+Harapan kami, Hackathon Merdeka 2.0 bisa menjadi sebuah bentuk "Sumpah Pemuda" versi 2.0
 
 Merdeka Dengan Kode, MDK!
