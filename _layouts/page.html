@@ -1,20 +1,5 @@
 ---
 layout: default
 ---
-<div class="post">
-<style>
-.post-header {
-    background-color: transparent;
-    background-image: url('{{ site.baseurl }}/img/7-300x187.jpg');
-    background-repeat: repeat-x;
-}
-</style>
-  <header class="post-header">
-    <h1 class="container post-title">{{ page.title }}</h1>
-  </header>
 
-  <article class="container post-content">
-    {{ content }}
-  </article>
-
-</div>
+{% include content.html %}
