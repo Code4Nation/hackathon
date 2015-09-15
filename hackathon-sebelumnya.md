@@ -91,3 +91,8 @@ Serta banyak kontribusi individu-individu lainnya pada acara tersebut, terima ka
 ![]({{ site.baseurl }}/img/h1/tv.png)
 ![]({{ site.baseurl }}/img/h1/ut.png)
 ![]({{ site.baseurl }}/img/h1/vd.png)
+
+##Rilis Pers Hackathon Pertama
+
+![]({{ site.baseurl }}/img/h1/info/ayo-ikut-h1.jpg)
+![]({{ site.baseurl }}/img/h1/info/ada-apa-dengan-pangan-indonesia.jpg)
