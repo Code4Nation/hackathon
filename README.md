@@ -1,20 +1,91 @@
-# Current domain: hackathonmerdeka.id
+# Domain Aktual: hackathonmerdeka.id
 
-So, originally micro-site for Code4Nation's first hackathon is maintained by
-@sabarr and his friends at Tech in Asia, using Wordpress. So there will be
-traces of their design here and there. By the way, thank you!
+Jadi, situs mikro untuk *hackathon* pertama Code4Nation dipelihara oleh @sabarr
+dan rekan-rekannya di Tech in Asia mengunakan Wordpress. Terima kasih banyak!
+Mungkin akan ada sedikit "bekas dan jejak" di sana-sini pada proses transisi
+ke Github Page ini.
 
-Now we are confident that it will be best to have static website and to open the
-contribution from all of you, we are moving to Github Pages.
+Mohon dicatat bahwa hak cipta dari setiap media yang ada di sini mungkin
+masih dimiliki oleh kontributor terkait. Mohon pertanyakan jika ingin
+mengadaptasi media tersebut ke tempat lain
 
-Please be noted that the copyright of each media in this website is possibly
-still owned by each contributor. Please ask before reapplying it anywhere else.
+## Berkontribusi
 
-## Running at Local
+Anda bisa berkontribusi banyak hal:
 
-Use `jekyll serve --baseurl=""`
+- Membuat [tes untuk static page] ini.
+- Memperbaiki kesalahan penulisan kata, seperti misalnya, tapi tidak terbatas
+  pada: ejaan yang salah, tanda baca yang salah, dan kesalahan penulisan nama.
+- Membuat panduan dan dokumentasi
 
-## How to contribute
+Pada dasarnya, coba saja kirim PR.
 
-1. Fork this
-2. Pull request to `master` branch
+## Menguji di Lokal (dan Lingkungan Pengembangan)
+
+Anda mungkin tertarik untuk *mem-fork* repository ini dan mengirimkan PR. Jika
+Anda terbiasa menggunakan Github, mungkin hal ini adalah hal yang trivial.
+Kami akan beri panduan singkat bagaimana mencoba menampilkan [halaman utama]
+di komputer lokal.
+
+**Catatan:** Anda tidak perlu melakukan ini untuk membuat PR, akan tetapi jika
+Anda melakukan perubahan yang berkaitan dengan tata letak dan/atau konten dari
+situs web statis ini, mungkin Anda ingin melihat hasil pratinjaunya.
+
+**Windows:**
+
+1. Kami menyarankan Anda menggunakan [Rails Installer]. Ikuti petunjuk di sana.
+   Setelah selesai, *restart* komputer Anda.
+1. Cari `Command Prompt with Ruby and Rails` di Start Menu Anda. Jika Anda
+   menggunakan Windows 8 dan/atau Windows 10, Anda dapat menekan tombol
+   `Windows + S` kemudian ketikkan `Command Prompt with Ruby and Rails`.
+1. `cd` ke tempat Anda *meng-clone* repository ini, kemudian ketikkan
+
+        gem install bundler
+        bundle install
+        bundle exec jekyll serve
+
+    `bundle install` adalah perintah yang digunakan untuk melakukan instalasi
+    segala dependensi yang dibutuhkan untuk melakukan pratinjau di lokal.
+
+    `bundle exec jekyll serve` adalah perintah untuk melakukan halaman pratinjau
+    sekaligus melakukan kompilasi dari berkas Markdown ke berkas HTML. Jalankan
+    `bundle exec jekyll --help` untuk perintah lengkap.
+
+1. Buka `http://localhost:4000` dari peramban kesayangan Anda.
+
+**Linux dan Mac OS X:**
+
+1. Sebaiknya Anda menggunakan [rvm], sekalipun nantinya Anda hanya menggunakan
+   satu versi Ruby. Di halaman depan rvm ada panduan cepat melakukan instalasi
+   rvm dengan hanya dua baris perintah.
+1. Lakukan instalasi Ruby versi 2.2 ke atas. Untuk saat ini bisa gunakan versi
+   2.2.1:
+
+        rvm install 2.2.1
+        rvm use ruby-2.2.1
+
+    Catatan: pada beberapa komputer, proses ini lama sekali, bisa setengah jam,
+    karena proses ini akan melakukan instalasi dari kode sumber.
+
+1. Fork dan clone repository `Code4Nation/hackathon`, kemudian `cd` ke tempat
+   tersebut.
+
+1. Jalankan:
+
+        gem install bundler
+        bundle install
+        bundle exec jekyll serve
+
+    `bundle install` adalah perintah yang digunakan untuk melakukan instalasi
+    segala dependensi yang dibutuhkan untuk melakukan pratinjau di lokal.
+
+    `bundle exec jekyll serve` adalah perintah untuk melakukan halaman pratinjau
+    sekaligus melakukan kompilasi dari berkas Markdown ke berkas HTML. Jalankan
+    `bundle exec jekyll --help` untuk perintah lengkap.
+
+1. Buka `http://localhost:4000` dari peramban kesayangan Anda.
+
+[tes untuk static page]: https://github.com/blog/1939-how-github-uses-github-to-document-github
+[halaman utama]: http://code4nation.github.io/hackathon/
+[Rails Installer]: http://railsinstaller.org/en
+[rvm]: http://rvm.io
