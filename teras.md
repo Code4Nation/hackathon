@@ -2,6 +2,7 @@
 title: Teras
 permalink: /
 order: 1
+layout: home
 ---
 
 ## Hackathon Merdeka 2.0
