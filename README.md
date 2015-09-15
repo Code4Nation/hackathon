@@ -9,3 +9,12 @@ contribution from all of you, we are moving to Github Pages.
 
 Please be noted that the copyright of each media in this website is possibly
 still owned by each contributor. Please ask before reapplying it anywhere else.
+
+## Running at Local
+
+Use `jekyll serve --baseurl=""`
+
+## How to contribute
+
+1. Fork this
+2. Pull request to `master` branch
