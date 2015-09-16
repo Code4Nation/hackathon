@@ -21,6 +21,7 @@ $( document ).ready(function() {
 	var map = new ol.Map({
 	  layers: [wms],
 	  target: 'map',
+	  interactions: ol.interaction.defaults({mouseWheelZoom:false,doubleClickZoom:false,dragPan:false,shiftDragZoom:false,dragPan:false}),
 	  controls: ol.control.defaults({
 		attributionOptions: /** @type {olx.control.AttributionOptions} */ ({
 		  collapsible: false
