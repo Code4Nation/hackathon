@@ -19,14 +19,12 @@ $( document ).ready(function() {
 				})
 			  });
     var venue = new ol.layer.Vector({
-                    name: 'Hackathon Merdeka 2.0',
-                    /*onclick: $map.PerbatasanWilayahOnclick,*/
-                    source: new ol.source.KML({
-                        extractStyles: false,
-                        projection: projection900913,
-                        url:'{{ site.baseurl }}/KotaAcara.kml'
-                    })
-                });
+				  source: new ol.source.Vector({
+					url:'{{ site.baseurl }}/KotaAcara.kml',
+					projection: projection900913,
+					format: new ol.format.KML()
+				  })
+				});
 	var map = new ol.Map({
 	  layers: [wms,venue],
 	  target: 'map',
