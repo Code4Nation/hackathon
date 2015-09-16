@@ -19,7 +19,7 @@ $( document ).ready(function() {
             attribution: '&copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors'
             }).addTo(map);
 	
-	var kmlLayer = new L.KML("{{ "/KotaAcara.kml" | prepend: site.baseurl }}", {async: true});
+	var kmlLayer = new L.KML("http://www.google.com/maps/d/u/5/kml?mid=z4pTcO-jW240.kNRfjhoSCo-s&lid=z4pTcO-jW240.k1im3FOpKpNg", {async: true});
                                                               
          kmlLayer.on("loaded", function(e) { 
             map.fitBounds(e.target.getBounds());
