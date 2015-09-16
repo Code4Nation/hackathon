@@ -1,8 +1,8 @@
-title: Hackathon Merdeka 2.0
-email: hackathon@code4nation.org
+title: "Hackathon Merdeka 2.0"
+email: "hackathon@code4nation.org"
 baseurl: ""
 url: "http://hackathonmerdeka.id"
-markdown: kramdown
+markdown: "kramdown"
 timezone: "Asia/Jakarta"
 defaults:
   -
