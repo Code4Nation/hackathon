@@ -26,7 +26,7 @@ $( document ).ready(function() {
 				  })
 				});
 	var map = new ol.Map({
-	  layers: [wms,venue],
+	  layers: [venue],
 	  target: document.getElementById('map'),
 	  interactions: ol.interaction.defaults({mouseWheelZoom:false,doubleClickZoom:false,shiftDragZoom:false}),
 	  controls: ol.control.defaults({
