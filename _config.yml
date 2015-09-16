@@ -1,8 +1,9 @@
-title: Hackathon Merdeka
-email: hackathon@code4nation.org
+title: "Hackathon Merdeka 2.0"
+description: "Tujuan dari Hackathon Merdeka 2.0 adalah mengumpulkan solusi untuk pemecahan masalah pengumpulan data yang cepat dan akurat tentang kependudukan."
+email: "hackathon@code4nation.org"
 baseurl: ""
-url: "http://hackathonmerdeka.id/"
-markdown: kramdown
+url: "http://hackathonmerdeka.id"
+markdown: "kramdown"
 timezone: "Asia/Jakarta"
 defaults:
   -
