@@ -15,6 +15,14 @@ $( document ).ready(function() {
 		attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
 	}).addTo(map);
 	
+	var kmlLayer = new L.KML("KotaAcara.kmz", {async: true});
+                                                              
+         kmlLayer.on("loaded", function(e) { 
+            map.fitBounds(e.target.getBounds());
+         });
+                                                
+         map.addLayer(kmlLayer);
+	
 });
 </script>
 <style>
