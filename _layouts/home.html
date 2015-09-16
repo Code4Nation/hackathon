@@ -7,39 +7,6 @@ layout: default
 $( document ).ready(function() {
     $('.site-header').attr('style','border:0px;');
 	$('.page-link').addClass("text-white-mdk");
-	var projection4326 = ol.proj.get('EPSG:4326');
-    var projection900913 = ol.proj.get('EPSG:900913');
-    var projection3857 = ol.proj.get('EPSG:3857');
-	
-	var wms=new ol.layer.Tile({
-				source: new ol.source.TileWMS({
-				  url: 'http://demo.boundlessgeo.com/geoserver/wms',
-				  params: {
-					'LAYERS': 'ne:NE1_HR_LC_SR_W_DR'
-				  }
-				})
-			  });
-    var venue = new ol.layer.Vector({
-				  source: new ol.source.Vector({
-					url:'{{ site.baseurl }}/KotaAcara.kml',
-					format: new ol.format.KML()
-				  })
-				});
-	var map = new ol.Map({
-	  layers: [venue],
-	  target: document.getElementById('map'),
-	  interactions: ol.interaction.defaults({mouseWheelZoom:false,doubleClickZoom:false,shiftDragZoom:false}),
-	  controls: ol.control.defaults({
-		attributionOptions: /** @type {olx.control.AttributionOptions} */ ({
-		  collapsible: false
-		})
-	  }),
-	  view: new ol.View({
-                center: ol.proj.transform([118, -2], 'EPSG:4326', 'EPSG:900913'),
-                projection: projection900913,
-                zoom: 5
-            })
-	});
 });
 </script>
 <style>
@@ -87,10 +54,9 @@ $( document ).ready(function() {
     <article class="post-content text-center">
 	{{ content }}
 	</article>
-	<!--<iframe src="https://www.google.com/maps/d/u/5/embed?mid=z4pTcO-jW240.kNRfjhoSCo-s" class="iframe-map" scrolling="no" frameborder="0" marginheight="0" marginwidth="0"></iframe>-->
-	<div id="map" class="iframe-map"></div>
+	<iframe src="https://www.google.com/maps/d/u/5/embed?mid=z4pTcO-jW240.kNRfjhoSCo-s" class="iframe-map" scrolling="no" frameborder="0" marginheight="0" marginwidth="0"></iframe>
 	<article class="post-content text-center" style="padding-top: 30px;">
-	Ayo bersama-sama kita berkontribusi pada negara untuk menyelesaikan masalah kependudukan!
+	Harapan kami, Hackathon Merdeka 2.0 bisa menjadi sebuah bentuk "Sumpah Pemuda" modern.
 	<br>
 	<h2 style="padding-top: 15px;">Merdeka Dengan Kode, MDK!</h2>
 	</article>
@@ -144,4 +110,3 @@ $( document ).ready(function() {
 </div>
 
 </div>
-<script src="http://openlayers.org/en/v3.9.0/build/ol.js"></script>
