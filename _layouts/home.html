@@ -19,7 +19,7 @@ $( document ).ready(function() {
             attribution: '&copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors'
             }).addTo(map);
 	
-	var kmlLayer = new L.KML("{{ "KotaAcara.kmz" | prepend: site.baseurl }}", {async: true});
+	var kmlLayer = new L.KML("{{ "KotaAcara.kml" | prepend: site.baseurl }}", {async: true});
                                                               
          kmlLayer.on("loaded", function(e) { 
             map.fitBounds(e.target.getBounds());
