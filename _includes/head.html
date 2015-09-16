@@ -4,7 +4,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
   <title>{{ site.title }}{% if page.title %} | {{ page.title }}{% endif %}</title>
-  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.actioncall }}{% endif %}">
   <meta property="og:site_name" content="{{ site.title }}">
   <meta property="og:type" content="website">
   <meta property="og:title" content="{{ site.title }}{% if page.title %} | {{ page.title }}{% endif %}">
@@ -12,8 +12,7 @@
   <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <meta property="og:image" content="{{ "/img/big-thumb.jpg"  | prepend: site.baseurl | prepend: site.url }}">
   <meta property="image" content="{{ "/img/big-thumb.jpg"  | prepend: site.baseurl | prepend: site.url }}">
-  <meta name="author" content="code4nation@gmail.com">
-  <meta name="description" content="Setelah sukses menyelenggarakan Hackathon Merdeka yang pertama pada bulan Agustus lalu, Code4Nation kembali mengadakan Hackathon Merdeka pada tanggal 24-25 Oktober serentak di 17 kota di penjuru Indonesia dan para pemenangnya akan dikumpulkan di Jakarta pada momen Hari Sumpah Pemuda 28 Oktober 2015. Ayo bersama-sama kita berkontribusi pada negara untuk menyelesaikan masalah kependudukan!">
+  <meta name="author" content="{{ site.email }}">
    
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
