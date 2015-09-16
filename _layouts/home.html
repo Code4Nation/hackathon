@@ -9,18 +9,7 @@ $( document ).ready(function() {
 	$('.page-link').addClass("text-white-mdk");
 	var projection4326 = ol.proj.get('EPSG:4326');
     var projection900913 = ol.proj.get('EPSG:900913');
-	var openCycleMapLayer = new ol.layer.Tile({
-	  source: new ol.source.OSM({
-		attributions: [
-		  new ol.Attribution({
-			html: 'All maps &copy; ' +
-				'<a href="http://www.opencyclemap.org/">OpenCycleMap</a>'
-		  }),
-		  ol.source.OSM.ATTRIBUTION
-		],
-		url: 'http://{a-c}.tile.opencyclemap.org/cycle/{z}/{x}/{y}.png'
-	  })
-	});
+	
 	var wms=new ol.layer.Tile({
 				source: new ol.source.TileWMS({
 				  url: 'http://demo.boundlessgeo.com/geoserver/wms',
