@@ -160,7 +160,7 @@
 				<color>ff3644DB</color>
 				<scale>1.1</scale>
 				<Icon>
-					<href>{{ site.baseurl }}/poin.png</href>
+					<href>img/poin.png</href>
 				</Icon>
 				<hotSpot x='16' y='31' xunits='pixels' yunits='insetPixels'>
 				</hotSpot>
@@ -177,7 +177,7 @@
 				<color>ff3644DB</color>
 				<scale>1.1</scale>
 				<Icon>
-					<href>{{ site.baseurl }}/poin.png</href>
+					<href>img/poin.png</href>
 				</Icon>
 				<hotSpot x='16' y='31' xunits='pixels' yunits='insetPixels'>
 				</hotSpot>
