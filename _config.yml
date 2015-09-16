@@ -1,7 +1,7 @@
 title: Hackathon Merdeka
 email: hackathon@code4nation.org
 baseurl: ""
-url: "http://hackathonmerdeka.id/"
+url: "http://hackathonmerdeka.id"
 markdown: kramdown
 timezone: "Asia/Jakarta"
 defaults:
