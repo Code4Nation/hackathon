@@ -7,11 +7,7 @@ layout: default
 $( document ).ready(function() {
     $('.site-header').attr('style','border:0px;');
 	$('.page-link').addClass("text-white-mdk");
-	var map = L.map( 'map', {
-		center: [-2.2, 118],
-		minZoom: 2,
-		zoom: 2
-	});
+	var map = L.map('map').setView([-2.2, 118], 4.4);
 	map.touchZoom.disable();
     map.scrollWheelZoom.disable();
     map.dragging.disable();
