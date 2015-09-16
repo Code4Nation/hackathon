@@ -7,26 +7,37 @@ layout: default
 $( document ).ready(function() {
     $('.site-header').attr('style','border:0px;');
 	$('.page-link').addClass("text-white-mdk");
-	var map = L.map('map').setView([-2, 118], 5);
-	map.touchZoom.disable();
-    map.scrollWheelZoom.disable();
-    map.dragging.disable();
-	/*L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
-		attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-	}).addTo(map);*/
-	L.tileLayer(
-            'http://{a-c}.tile.opencyclemap.org/cycle/{z}/{x}/{y}.png', {
-            attribution: '&copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors'
-            }).addTo(map);
 	
-	/*var kmlLayer = new L.KML("{{ "/propinsi.kml" | prepend: site.baseurl }}", {async: true});
-                                                              
-         kmlLayer.on("loaded", function(e) { 
-            map.fitBounds(e.target.getBounds());
-         });
-                                                
-         map.addLayer(kmlLayer);*/
-	
+	var openSeaMapLayer = new ol.layer.Tile({
+	  source: new ol.source.OSM({
+		attributions: [
+		  new ol.Attribution({
+			html: 'All maps &copy; ' +
+				'<a href="http://www.openseamap.org/">OpenSeaMap</a>'
+		  }),
+		  ol.source.OSM.ATTRIBUTION
+		],
+		crossOrigin: null,
+		url: 'http://tiles.openseamap.org/seamark/{z}/{x}/{y}.png'
+	  })
+	});
+	var map = new ol.Map({
+	  layers: [
+		openCycleMapLayer,
+		openSeaMapLayer
+	  ],
+	  target: 'map',
+	  controls: ol.control.defaults({
+		attributionOptions: /** @type {olx.control.AttributionOptions} */ ({
+		  collapsible: false
+		})
+	  }),
+	  view: new ol.View({
+		maxZoom: 18,
+		center: [-244780.24508882355, 5986452.183179816],
+		zoom: 15
+	  })
+	});
 });
 </script>
 <style>
@@ -131,3 +142,4 @@ $( document ).ready(function() {
 </div>
 
 </div>
+<script src="http://openlayers.org/en/v3.9.0/build/ol.js"></script>
