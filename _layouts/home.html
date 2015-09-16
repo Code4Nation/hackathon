@@ -9,6 +9,7 @@ $( document ).ready(function() {
 	$('.page-link').addClass("text-white-mdk");
 	var projection4326 = ol.proj.get('EPSG:4326');
     var projection900913 = ol.proj.get('EPSG:900913');
+    var projection3857 = ol.proj.get('EPSG:3857');
 	
 	var wms=new ol.layer.Tile({
 				source: new ol.source.TileWMS({
@@ -34,8 +35,8 @@ $( document ).ready(function() {
 		})
 	  }),
 	  view: new ol.View({
-                center: [118, -2],
-                projection: projection4326,
+                center: ol.proj.transform([118, -2], 'EPSG:4326', 'EPSG:3857'),
+                projection: projection3857,
                 zoom: 5
             })
 	});
