@@ -56,7 +56,9 @@ $( document ).ready(function() {
 	{{ content }}
 	Ayo bersama-sama kita berkontribusi pada negara untuk menyelesaikan masalah kependudukan!
 	</article>
-	<iframe style="pointer-events: none;" src="https://www.google.com/maps/d/u/5/embed?mid=z4pTcO-jW240.kNRfjhoSCo-s" class="iframe-map" scrolling="no" frameborder="0" marginheight="0" marginwidth="0"></iframe>
+	<div class='content-container  embed-container  maps'>
+		<iframe style="pointer-events: none;" src="https://www.google.com/maps/d/u/5/embed?mid=z4pTcO-jW240.kNRfjhoSCo-s" class="iframe-map" scrolling="no" frameborder="0" marginheight="0" marginwidth="0"></iframe>
+	</div>
 	<article class="post-content text-center" style="padding-top: 30px;">
 	Harapan kami, Hackathon Merdeka 2.0 bisa menjadi sebuah bentuk "Sumpah Pemuda" modern. 
 	<br>
@@ -90,7 +92,7 @@ var onMapClickHandler = function (event) {
 }
 
 // Enable map zooming with mouse scroll when the user clicks the map
-$('.iframe-map').on('click', onMapClickHandler);
+$('.maps.embed-container').on('click', onMapClickHandler);
 </script>
 
 <div class="module white" style="padding-top: 100px;">
