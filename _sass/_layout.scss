@@ -327,3 +327,11 @@
 	width:100%; 
 	height:6000px;
 }
+.iframe-map{
+	width:100%; 
+	height:480px;
+	overflow:hidden;
+	@include media-query($on-palm) {
+	height:280px;
+	}
+}
