@@ -23,7 +23,7 @@ $( document ).ready(function() {
                     /*onclick: $map.PerbatasanWilayahOnclick,*/
                     source: new ol.source.KML({
                         extractStyles: false,
-                        projection: $map.projection900913,
+                        projection: projection900913,
                         url:{{ site.baseurl }}/KotaAcara.kml
                     })
                 });
