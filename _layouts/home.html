@@ -21,11 +21,16 @@ $( document ).ready(function() {
 		url: 'http://{a-c}.tile.opencyclemap.org/cycle/{z}/{x}/{y}.png'
 	  })
 	});
+	var wms=new ol.layer.Tile({
+				source: new ol.source.TileWMS({
+				  url: 'http://demo.boundlessgeo.com/geoserver/wms',
+				  params: {
+					'LAYERS': 'ne:NE1_HR_LC_SR_W_DR'
+				  }
+				})
+			  });
 	var map = new ol.Map({
-	  layers: [
-		
-		openCycleMapLayer
-	  ],
+	  layers: [wms],
 	  target: 'map',
 	  controls: ol.control.defaults({
 		attributionOptions: /** @type {olx.control.AttributionOptions} */ ({
