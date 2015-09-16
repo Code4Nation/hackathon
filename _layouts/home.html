@@ -32,10 +32,10 @@ $( document ).ready(function() {
 		})
 	  }),
 	  view: new ol.View({
-		maxZoom: 18,
-		center: [-244780.24508882355, 5986452.183179816],
-		zoom: 15
-	  })
+                center: ol.proj.transform([118, -2], 'EPSG:4326', 'EPSG:900913'),
+                projection: $map.projection900913,
+                zoom: 4.4
+            })
 	});
 });
 </script>
