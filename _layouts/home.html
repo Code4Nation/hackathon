@@ -21,14 +21,13 @@ $( document ).ready(function() {
     var venue = new ol.layer.Vector({
 				  source: new ol.source.Vector({
 					url:'{{ site.baseurl }}/KotaAcara.kml',
-					projection: projection900913,
 					format: new ol.format.KML()
 				  })
 				});
 	var map = new ol.Map({
 	  layers: [wms,venue],
 	  target: document.getElementById('map'),
-	  interactions: ol.interaction.defaults({mouseWheelZoom:false,doubleClickZoom:false,dragPan:false,shiftDragZoom:false,dragPan:false}),
+	  interactions: ol.interaction.defaults({mouseWheelZoom:false,doubleClickZoom:false,shiftDragZoom:false}),
 	  controls: ol.control.defaults({
 		attributionOptions: /** @type {olx.control.AttributionOptions} */ ({
 		  collapsible: false
