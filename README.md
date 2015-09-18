@@ -20,6 +20,16 @@ Anda bisa berkontribusi banyak hal:
 
 Pada dasarnya, coba saja kirim PR.
 
+## Menguji di Github.io / Domain Anda
+
+Harap diingat bahwa `github.io` hanya memproses branch `gh-pages`, jadi
+pastikan Anda merubah:
+- Hapus file `CNAME` di `gh-pages` jika tidak terpakai
+- Ubah domain yang ada di file `CNAME` dengan domain Anda jika dipakai
+- Ubah isi parameter `url` di file `_config.yml` dengan domain Anda
+- Ubah isi parameter `baseurl` dari kosong (`""`) menjadi `"hackathon"` jika anda tidak memakai domain khusus (jad alamatnya adalah `<nama user Anda>.github.io/hackathon` (tentu saja jika mengubah nama repo ini, gunakan nama yang sesuai).
+- Jika setelah dicek ada yang rusak, berarti ada `{{ site.baseurl }}` dan/atau `{{ site.url }}` yang lupa ditambahkan. Mohon buat PR dan beritahukan kami di upstream!
+
 ## Menguji di Lokal (dan Lingkungan Pengembangan)
 
 Anda mungkin tertarik untuk *mem-fork* repository ini dan mengirimkan PR. Jika
