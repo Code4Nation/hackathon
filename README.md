@@ -28,7 +28,7 @@ pastikan Anda merubah:
 - Ubah domain yang ada di file `CNAME` dengan domain Anda jika dipakai
 - Ubah isi parameter `url` di file `_config.yml` dengan domain Anda
 - Ubah isi parameter `baseurl` dari kosong (`""`) menjadi `"hackathon"` jika anda tidak memakai domain khusus (jad alamatnya adalah `<nama user Anda>.github.io/hackathon` (tentu saja jika mengubah nama repo ini, gunakan nama yang sesuai).
-- Jika setelah dicek ada yang rusak, berarti ada `{{ site.baseurl }}` dan/atau `{{ site.url }}` yang lupa ditambahkan. Mohon buat PR dan beritahukan kami di upstream!
+- Jika setelah dicek ada yang rusak, berarti ada `{{ site.baseurl }}` dan/atau `{{ site.url }}` yang lupa ditambahkan. Mohon buat PR dan beritahukan `Code4Nation` di `upstream`!
 
 ## Menguji di Lokal (dan Lingkungan Pengembangan)
 
