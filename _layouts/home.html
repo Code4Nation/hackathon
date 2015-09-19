@@ -54,10 +54,18 @@ $( document ).ready(function() {
     <div class="container">
     <article class="post-content text-center">
 	{{ content }}
+<<<<<<< HEAD
 	<br>
 	Ayo bersama-sama kita berkontribusi pada negara untuk menyelesaikan masalah kependudukan!
 	</article>
 	<iframe src="https://www.google.com/maps/d/u/5/embed?mid=z4pTcO-jW240.kNRfjhoSCo-s" class="iframe-map" scrolling="no" frameborder="0" marginheight="0" marginwidth="0"></iframe>
+=======
+	Ayo bersama-sama kita berkontribusi pada negara untuk menyelesaikan masalah kependudukan!
+	</article>
+	<div class='content-container  embed-container  maps'>
+		<iframe style="pointer-events: none;" src="https://www.google.com/maps/d/u/5/embed?mid=z4pTcO-jW240.kNRfjhoSCo-s" class="iframe-map" scrolling="no" frameborder="0" marginheight="0" marginwidth="0"></iframe>
+	</div>
+>>>>>>> Code4Nation/master
 	<article class="post-content text-center" style="padding-top: 30px;">
 	Harapan kami, Hackathon Merdeka 2.0 bisa menjadi sebuah bentuk "Sumpah Pemuda" modern. 
 	<br>
@@ -65,6 +73,34 @@ $( document ).ready(function() {
 	</article>
 	</div>
 </div>
+
+<script>
+// Disable scroll zooming and bind back the click event
+// From http://stackoverflow.com/questions/21992498/disable-mouse-scroll-wheel-zoom-on-embedded-google-maps#answer-25904582
+var onMapMouseleaveHandler = function (event) {
+  var that = $(this);
+
+  that.on('click', onMapClickHandler);
+  that.off('mouseleave', onMapMouseleaveHandler);
+  that.find('iframe').css("pointer-events", "none");
+}
+
+var onMapClickHandler = function (event) {
+  var that = $(this);
+
+  // Disable the click handler until the user leaves the map area
+  that.off('click', onMapClickHandler);
+
+  // Enable scrolling zoom
+  that.find('iframe').css("pointer-events", "auto");
+
+  // Handle the mouse leave event
+  that.on('mouseleave', onMapMouseleaveHandler);
+}
+
+// Enable map zooming with mouse scroll when the user clicks the map
+$('.maps.embed-container').on('click', onMapClickHandler);
+</script>
 
 <div class="module white" style="padding-top: 100px;">
     <div class="container">
@@ -87,7 +123,11 @@ $( document ).ready(function() {
 		<div class="col-lg-4">
 		<center><div class="img-circle-mdk"><i class="fa fa-pencil-square-o"></i></div></center>
 		 <article class="post-content text-center" style="color:#bb2526;">
+<<<<<<< HEAD
 		 <h2><a href="registrasi" style="color:#bb2526;text-decoration: none;">Daftar Segera di sini</a></h2>
+=======
+		 <h2><a href="registrasi" style="color:#bb2526;text-decoration: none;">Daftar segera di sini</a></h2>
+>>>>>>> Code4Nation/master
 		 </article>
 		</div>
 	</div>
@@ -96,7 +136,7 @@ $( document ).ready(function() {
 		<div class="col-lg-4">
 		<center><div class="img-circle-mdk"><i class="fa fa-leanpub fa-4"></i></div></center>
 		 <article class="post-content text-center" style="color:#bb2526;">
-		 <h2><a href="tema-dan-tantangan" style="color:#bb2526;text-decoration: none;">Pelajari tema dan tantangan Hackathon 2.0</a></h2>
+		 <h2><a href="tema-dan-tantangan" style="color:#bb2526;text-decoration: none;">Pelajari tema dan tantangan Hackathon Merdeka 2.0</a></h2>
 		 </article>
 		</div>
 		<div class="col-lg-4">&nbsp;</div>
