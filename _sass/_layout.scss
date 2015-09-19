@@ -85,12 +85,17 @@
 }
 
 .navbar-toggle{
-		border-color:white;
 		margin-bottom: 20px;
 		margin-top:18px;
+		.text-white-mdk { 
+		    color: white; 
+		}
 	}
 .navbar-toggle .icon-bar {
-	background-color: white;
+	
+	.text-white-mdk { 
+		    background-color: white; 
+		}
 }
 .navbar-collapse{
 	   margin-top:10px;
