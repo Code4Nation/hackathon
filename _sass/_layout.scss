@@ -86,6 +86,14 @@
           color: white;
 		}
 	}
+	.open>a:focus{
+	   background-color: rgba(0,0,0,0.8);
+	   color: white;
+	}
+	.open>a:hover{
+	   background-color: rgba(0,0,0,0.8);
+	   color: white;
+	}
 
     @include media-query($on-palm) {
         .text-white-mdk { 
@@ -93,15 +101,13 @@
 		}
     }
 }
-.nav .open>a:focus, .nav .open>a:hover{
-   background-color: rgba(0,0,0,0.8);
-   color: white;
-}
-.navbar-nav .open .dropdown-menu>li>a {
-    padding-top:10px;
-    padding-bottom:10px;
-}
-.navbar-nav .dropdown-toggle {
+.nav 
+.navbar-nav 
+.navbar-nav {
+    .open .dropdown-menu>li>a {
+		padding-top:10px;
+		padding-bottom:10px;
+    }
     @include media-query($on-palm) {
         .dropdown-toggle { 
 		  display: none;
