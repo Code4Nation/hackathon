@@ -17,27 +17,22 @@
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav navbar-right">
-                       {% assign pages = site.pages | sort:"order" %}
-						{% for page in pages %}
-						  {% if page.title %}
-						      {% if page.order<=4 %}
-							  <li><a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
-							  {% else %}
-							  <li class="visible-sm"><a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
-							  {% endif %}
-						  {% endif %}
-						{% endfor %}
+                          <li><a class="page-link" href="{{ site.baseurl }}/">Teras</a></li>
+                          <li><a class="page-link" href="{{ site.baseurl }}/registrasi/">Registrasi</a></li>
+                          <li><a class="page-link" href="{{ site.baseurl }}/tema-dan-tantangan/">Tema dan Tantangan</a></li>
+						  <li><a class="page-link" href="{{ site.baseurl }}/peraturan-dan-panduan/">Peraturan dan Panduan</a></li>
+						  <li class="visible-sm"><a class="page-link" href="{{ site.baseurl }}/partner/">Partner</a></li>
+						  <li class="visible-sm"><a class="page-link" href="{{ site.baseurl }}/tentang-kami/">Tentang Kami</a></li>
+						  <li class="visible-sm"><a class="page-link" href="{{ site.baseurl }}/hackathon-sebelumnya/">Hackathon Sebelumnya</a></li>
+						  
+						
+                       
 						<li class="dropdown open">
 						  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true"><i class="fa fa-circle"></i><i class="fa fa-circle"></i><i class="fa fa-circle"></i></a>
 						  <ul class="dropdown-menu">
-							{% assign pages = site.pages | sort:"order" %}
-							{% for page in pages %}
-							  {% if page.title %}
-								  {% if page.order>4 %}
-								  <li><a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
-								  {% endif %}
-							  {% endif %}
-							{% endfor %}
+							  <li><a class="page-link" href="{{ site.baseurl }}/partner/">Partner</a></li>
+							  <li><a class="page-link" href="{{ site.baseurl }}/tentang-kami/">Tentang Kami</a></li>
+							  <li><a class="page-link" href="{{ site.baseurl }}/hackathon-sebelumnya/">Hackathon Sebelumnya</a></li>
 						  </ul>
 						</li>
                     </ul>
