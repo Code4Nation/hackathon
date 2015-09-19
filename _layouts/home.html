@@ -35,6 +35,11 @@ layout: default
 		$(window).scroll(function(){
 		var scroll = $(window).scrollTop();
 			console.log(scroll);
+			if (scroll<700){
+			   $('.merdeka').attr('style','');
+			}else{
+			   $('.merdeka').attr('style',"background-image: url('{{ site.baseurl }}/img/c4n_.png');");
+			}
 		});
 	});
 	</script>
@@ -139,8 +144,8 @@ layout: default
 		</div>
 	</div>
 	<div class="module white" style="padding-top: 50px;">
-	    <img src="{{ site.baseurl }}/img/c4n_.png" alt="Hackathon Merdeka" style="width:100%">
-		<div class="container">
+	    <div style="width:100%;height:300px;"></div>
+	    <div class="container">
 		<article class="post-content text-center" style="color:#bb2526;">
 		<div class="row" style="padding-top:30px;">
 			<div class="col-lg-4">
