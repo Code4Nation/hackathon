@@ -128,7 +128,7 @@
           margin: 0px;
 		}
 		.dropdown-menu>li>a{
-		  padding: 3px 15px;
+		  padding: 10px 15px;
 		}
     }
 }
@@ -228,6 +228,7 @@
 .thumb { 
     background-color: transparent; 
     padding-top: 180px;
+    padding-bottom:30px;
     color:white;
     
     .content{
@@ -249,6 +250,7 @@
 	
     @include media-query($on-palm) {
 		padding-top: 120px;
+		padding-bottom:80px;
 		.title{
 			font-size: 28pt;
 		  }
