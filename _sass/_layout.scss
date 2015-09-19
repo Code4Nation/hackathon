@@ -74,7 +74,15 @@
         text-decoration: none;
         vertical-align: bottom;
 
-        &:hover,&:visited,&:selected{
+        &:hover{
+		  background-color: rgba(0,0,0,0.8);
+          color: white;
+		}
+		&:visited{
+		  background-color: rgba(0,0,0,0.8);
+          color: white;
+		}
+		&:selected{
 		  background-color: rgba(0,0,0,0.8);
           color: white;
 		}
