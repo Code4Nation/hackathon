@@ -84,19 +84,6 @@
     }
 }
 
-.navbar-toggle{
-		margin-bottom: 20px;
-		margin-top:18px;
-		.text-white-mdk { 
-		    color: white; 
-		}
-	}
-.navbar-toggle .icon-bar {
-	
-	.text-white-mdk { 
-		    background-color: white; 
-		}
-}
 .navbar-collapse{
 	   margin-top:10px;
 	   @include media-query($on-palm) {
