@@ -75,15 +75,6 @@
 		}
     }
     
-    .open>a:focus{
-		  background-color: rgba(0,0,0,0.8);
-          color: white;
-	}
-	.open>a:hover{
-		  background-color: rgba(0,0,0,0.8);
-          color: white;
-	}
-    
     .text-white-mdk { 
 		color: white; 
 		
@@ -102,6 +93,10 @@
 		  color: #5e5e5e;
 		}
     }
+}
+.nav .open>a, .nav .open>a:focus, .nav .open>a:hover{
+   background-color: rgba(0,0,0,0.8);
+   color: white;
 }
 
 	.navbar-toggle{
