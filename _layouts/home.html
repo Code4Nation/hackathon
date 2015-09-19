@@ -32,15 +32,17 @@ layout: default
 
 		// Enable map zooming with mouse scroll when the user clicks the map
 		$('.maps.embed-container').on('click', onMapClickHandler);
-		$(window).scroll(function(){
+		var setbg=function(){
 		var scroll = $(window).scrollTop();
 			console.log(scroll);
 			if (scroll<700){
 			   $('.merdeka').attr('style','');
 			}else{
-			   $('.merdeka').attr('style',"background-image: url('{{ site.baseurl }}/img/c4n_.png');");
+			   $('.merdeka').attr('style',"background-image: url('{{ site.baseurl }}/img/c4n_.png');background-position: 50% 100%;");
 			}
-		});
+		};
+		$(window).scroll(setbg);
+		setbg();
 	});
 	</script>
 	<style>
@@ -143,7 +145,7 @@ layout: default
 		</article>
 		</div>
 	</div>
-	<div style="width:100%;height:300px;"></div>
+	<div class="merdeka-div"></div>
 	<div class="module white" style="padding-top: 50px;">
 	    <div class="container">
 		<article class="post-content text-center" style="color:#bb2526;">

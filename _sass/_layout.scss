@@ -217,7 +217,7 @@
 	position: fixed;
 	top: 0;
 	left: 0;
-	background-position: center 50%;
+	background-position: 50% 70%;
 	background-repeat: no-repeat;
 	background-size: cover;
 	width: 100%;
@@ -226,6 +226,13 @@
 	background-image: url('../img/bendera.png');
 	@include media-query($on-palm) {
 		height: auto;
+	}
+}
+.merdeka-div {
+    width:100%;
+    height:706px;
+    @include media-query($on-palm) {
+		height:406px;
 	}
 }
 .thumb { 
