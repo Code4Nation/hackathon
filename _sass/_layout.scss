@@ -249,14 +249,18 @@
 	}
 	
     @include media-query($on-palm) {
-		padding-top: 120px;
+		padding-top: 70px;
 		padding-bottom:80px;
+		.content{
+		   padding:10px
+		}
 		.title{
 			font-size: 28pt;
 		  }
 		h2{
-		font-size: 18px;
-	  }
+			font-size: 18px;
+		  }
+		  
 	}
 }
 
