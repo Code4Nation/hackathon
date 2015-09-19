@@ -173,7 +173,6 @@
 	background-image: url('{{ site.baseurl }}/img/bendera.png');
 	@include media-query($on-palm) {
 		height: auto;
-	  }
 	}
 }
 .thumb { 
