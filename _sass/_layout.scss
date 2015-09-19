@@ -215,7 +215,7 @@
 	position: fixed;
 	top: 0;
 	left: 0;
-	background-position: center 0;
+	background-position: center 50%;
 	background-repeat: no-repeat;
 	background-size: cover;
 	width: 100%;
@@ -250,10 +250,10 @@
 	}
 	
     @include media-query($on-palm) {
-		padding-top: 100px;
+		padding-top: 80px;
 		padding-bottom:70px;
 		.content{
-		   padding-top:10px;
+		   padding:10px;
 		   padding-bottom:15px;
 		}
 		.title{
