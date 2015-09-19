@@ -187,7 +187,7 @@
  
 .jumbotron{
     background-color: transparent;
-	padding-bottom:250px;
+	padding-bottom:180px;
 	
 	@include media-query($on-palm) {
 		padding-bottom:350px;
