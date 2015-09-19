@@ -187,7 +187,7 @@
  
 .jumbotron{
     background-color: transparent;
-	padding-bottom:250px;
+	padding-bottom:180px;
 	
 	@include media-query($on-palm) {
 		padding-bottom:350px;
@@ -308,7 +308,7 @@
 	 
 	 @include media-query($on-palm) {
 	    iframe{
-	    width: 320px;
+	    width: 100%;
         height: 200px;
 	   }
 	}
@@ -334,4 +334,8 @@
 	@include media-query($on-palm) {
 	height:280px;
 	}
+}
+.iframe-movie{
+	width:100%; 
+	height:200px;
 }
