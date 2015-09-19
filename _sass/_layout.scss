@@ -52,17 +52,7 @@
     line-height: $spacing-unit;
     margin-top: 10px;
     
-    .navbar-toggle{
-		border-color:white;
-		margin-bottom: 20px;
-		margin-top:18px;
-	}
-	.navbar-toggle .icon-bar {
-		background-color: white;
-	}
-	.navbar-collapse{
-		   margin-top:10px;
-	}
+    
 
     .page-link {
         color: lighten($text-color, 30%);
@@ -88,13 +78,25 @@
         text-align: right;
 		padding:10px;
 
-        .navbar-collapse{
-		   background-color: rgba(255,255,255,0.9);
-		}
-		.nav .text-white-mdk { 
+        .text-white-mdk { 
 		  color: #5e5e5e;
 		}
     }
+}
+
+.navbar-toggle{
+		border-color:white;
+		margin-bottom: 20px;
+		margin-top:18px;
+	}
+.navbar-toggle .icon-bar {
+	background-color: white;
+}
+.navbar-collapse{
+	   margin-top:10px;
+	   @include media-query($on-palm) {
+	      background-color: rgba(255,255,255,0.9);
+	   }
 }
 
 
