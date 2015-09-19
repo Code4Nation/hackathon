@@ -32,6 +32,10 @@ layout: default
 
 		// Enable map zooming with mouse scroll when the user clicks the map
 		$('.maps.embed-container').on('click', onMapClickHandler);
+		$(window).scroll(function(){
+		var scroll = $(window).scrollTop();
+			console.log(scroll);
+		});
 	});
 	</script>
 	<style>
