@@ -59,6 +59,11 @@
         text-decoration: none;
         vertical-align: bottom;
         text-transform: uppercase;
+        
+        .fa{
+		  font-size: 10px;
+          padding-left:2px;
+		}
 
         &:hover{
 		  background-color: rgba(0,0,0,0.8);
@@ -70,14 +75,17 @@
 		}
     }
     
+    .open>a:focus{
+		  background-color: rgba(0,0,0,0.8);
+          color: white;
+	}
+	.open>a:hover{
+		  background-color: rgba(0,0,0,0.8);
+          color: white;
+	}
+    
     .text-white-mdk { 
 		color: white; 
-		
-		.fa{
-		  font-size: 14px;
-          font-weight: 400;
-          padding-left:2px;
-		}
 		
 		&:hover{
 		  background-color: rgba(0,0,0,0.8);
