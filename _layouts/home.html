@@ -34,8 +34,15 @@ layout: default
 	});
 	</script>
 	<style>
+	.nav .text-white-mdk { 
+		color: white; 
+	}
+	.text-white-mdk:hover,.text-white-mdk:visited,.text-white-mdk:selected  { 
+		background-color: rgba(0,0,0,0.8);
+		color: white;
+	}
 	 .merdeka {
-		position: absolute;
+		position: fixed;
 		top: 0;
 		left: 0;
 		background-position: center 0;
@@ -43,8 +50,7 @@ layout: default
 		background-size: cover;
 		width: 100%;
 		height: 706px;
-		background-image: url('{{ site.baseurl }}/img/bendera.png');
-		z-index:-1;
+		background-image: url('/hackathon/img/bendera.png');
 	}
 	.xr {
 		background-color: #bb2526;
