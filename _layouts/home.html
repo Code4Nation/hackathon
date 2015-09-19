@@ -34,10 +34,11 @@ layout: default
 		$('.maps.embed-container').on('click', onMapClickHandler);
 		var setbg=function(){
 		var scroll = $(window).scrollTop();
-			console.log(scroll);
 			if (scroll<700){
 			   $('.merdeka').attr('style','');
+			   $('.thumb').show();
 			}else{
+			   $('.thumb').hide();
 			   $('.merdeka').attr('style',"background-image: url('{{ site.baseurl }}/img/c4n_.png');background-position: 50% 100%;");
 			}
 		};
