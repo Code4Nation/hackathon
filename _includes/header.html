@@ -19,8 +19,8 @@
                     <ul class="nav navbar-nav navbar-right">
                        {% assign pages = site.pages | sort:"order" %}
 						{% for page in pages %}
-						  {% if page.title%}
-						      {% if page.order<=4%}
+						  {% if page.title %}
+						      {% if page.order<=4 %}
 							  <li><a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
 							  {% else %}
 							  <li class="visible-sm"><a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
@@ -33,7 +33,7 @@
 							{% assign pages = site.pages | sort:"order" %}
 							{% for page in pages %}
 							  {% if page.title %}
-								  {% if page.order<=4%}
+								  {% if page.order>4 %}
 								  <li><a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
 								  {% endif %}
 							  {% endif %}
