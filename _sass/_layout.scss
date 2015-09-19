@@ -1,6 +1,23 @@
 /**
  * Site header
  */
+ @font-face {
+  font-family: "slkscr";
+  src: url('../fonts/slkscr.ttf') format('truetype');
+}
+@font-face {
+  font-family: "slkscrb";
+  src: url('../fonts/slkscrb.ttf') format('truetype');
+}
+@font-face {
+  font-family: "slkscre";
+  src: url('../fonts/slkscre.ttf') format('truetype');
+}
+@font-face {
+  font-family: "slkscreb";
+  src: url('../fonts/slkscreb.ttf') format('truetype');
+}
+
 .site-header {
     border-bottom: 1px solid #5e5e5e;
     min-height: 56px;
@@ -30,103 +47,116 @@
 }
 
 
-.site-nav {
-    padding-right: $spacing-unit;
-    float: right;
+
+.nav {
     line-height: $spacing-unit;
-    margin-top: 10px;
+    
+    .fa {
+        font-size: 12px;
+		padding-left:3px;
+	}
 
-    .menu-icon {
-        display: none;
-    }
-
-    .page-link {
+    .page-link, .page-link-child {
         color: lighten($text-color, 30%);
         font-size: 14px;
         font-weight: 400;
         line-height: $base-line-height;
         text-decoration: none;
         vertical-align: bottom;
-
-        // Gaps between nav items, but not on the first one
-        &:not(:first-child) {
-            margin-left: 20px;
-        }
-		&:hover{
-		  font-weight:700;
+        text-transform: uppercase;
+        
+        &:hover{
+		  background-color: rgba(0,0,0,0.5);
+          color: white;
+		}
+		&:focus{
+		  background-color: rgba(0,0,0,0.5);
+          color: white;
 		}
     }
+    
+    .text-white-mdk { 
+		color: white; 
+		
+		&:hover{
+		  background-color: rgba(0,0,0,0.5);
+          color: white;
+		}
+		&:focus{
+		  background-color: rgba(0,0,0,0.5);
+          color: white;
+		}
+	}
+	.open>a{
+	   background-color: rgba(0,0,0,0.5);
+	   color: white;
+	}
+	.open>a:focus{
+	   background-color: rgba(0,0,0,0.5);
+	   color: white;
+	}
+	.open>a:hover{
+	   background-color: rgba(0,0,0,0.5);
+	   color: white;
+	}
+	.dropdown>a:hover{
+	   background-color: rgba(0,0,0,0.5);
+	   color: white;
+	}
 
     @include media-query($on-palm) {
-        position: absolute;
-        top: 9px;
-        right: calc(#{$spacing-unit} / 2);
-        background-color: $background-color;
-        border: 1px solid $grey-color-light;
-        border-radius: 5px;
-        text-align: right;
-		padding:10px;
-
-        .menu-icon {
-            display: block;
-            float: right;
-            line-height: 0;
-            /*height: 26px;
-            padding-top: 10px;
-            padding-left: 10px;*/
-            text-align: center;
-            text-decoration: none;
-
-            > svg {
-                width: 18px;
-                height: 15px;
-
-                path {
-                    fill: $grey-color-dark;
-                }
-            }
-            span {
-                /*padding-bottom: 8px;
-                padding-left: 32px;*/
-            }
-        }
-
-        .trigger {
-            clear: both;
-            display: none;
-			padding-top: 15px;
-        }
-
-        &:hover .trigger {
-            display: block;
-            padding-bottom: 5px;
-        }
-
-        .page-link {
-            display: block;
-            padding: 10px 20px;
-			padding-right: 3px;			
-        }
+        .text-white-mdk { 
+		  color: #5e5e5e;
+		}
     }
 }
 
-.site-nav .text-white-mdk{
-   color:white;
-   
-   &:hover{
-      font-weight:700;
-   }
-   
-   @include media-query($on-palm) {
-      color:#5e5e5e;
-   }
+
+.navbar-nav {
+    .dropdown-menu>li>a{
+	   padding-top:10px;
+	   padding-bottom:10px;
+	}
+    @include media-query($on-palm) {
+        .dropdown-toggle { 
+		  display: none;
+		}
+		.dropdown-menu{
+		  display: block;
+		  background-color: transparent;
+		  border:0px;
+		  position:relative;
+		  float:none;
+		  min-width:100%;
+		  padding: 0px;
+          margin: 0px;
+          -webkit-box-shadow: none;
+          box-shadow: none;
+		}
+		.dropdown-menu>li>a{
+		  padding: 10px 15px;
+		}
+    }
+}
+.navbar-toggle{
+		border-color:lighten($text-color, 30%);;
+		margin-bottom: 20px;
+		margin-top:18px;
+	}
+.navbar-toggle .icon-bar {
+	background-color: lighten($text-color, 30%);;
 }
 
-@include media-query($on-palm) {
-      .site-nav .text-white-mdk{
-	   color:#5e5e5e;
-	  }
-   }
+
+.navbar-collapse{
+	   margin-top:10px;
+	   @include media-query($on-palm) {
+	      background-color: rgba(255,255,255,0.95);
+	      color:white;
+	   }
+}
+
+
 
 /**
  * Site footer
@@ -137,6 +167,8 @@
     font-size: 12px;
     padding: 12px 0;
     text-align: center;
+    width: 100%;
+    position:absolute;
 }
 
 .footer-heading {
@@ -185,23 +217,83 @@
     min-height: 600px;
  }
  
-.jumbotron{
-    background-color: transparent;
-	padding-bottom:180px;
-	
+.merdeka {
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-position: 50% 70%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 706px;
+	min-height:687px;
+	background-image: url('../img/bendera.png');
 	@include media-query($on-palm) {
-		padding-bottom:350px;
+		height: auto;
 	}
-	
 }
-.thumb{
-    background-color: transparent;
-    padding-top: 150px;
-	
-	img{
-	    width: 100%;
-		background-color: rgba(0,0,0,0.3);
+.merdeka-div {
+    width:100%;
+    height:406px;
+    @include media-query($on-palm) {
+		height:206px;
 	}
+}
+.thumb { 
+    background-color: transparent; 
+    padding-top: 180px;
+    padding-bottom:30px;
+    color:white;
+    display: table;
+    margin: 0 auto;
+    
+    .content{
+		background-color: rgba(0, 0, 0, 0.3);
+		padding: 30px;
+	}
+	.title{
+		font-size: 38pt;
+		font-family: "slkscre";
+	}
+	h2{
+		font-size: 32px;
+		font-weight: 400;
+	}
+	a{
+		text-decoration: none;
+		font-size: 20px;
+	}
+	
+    @include media-query($on-palm) {
+		padding-top: 90px;
+		padding-bottom:70px;
+		.content{
+		   padding:10px;
+		   padding-bottom:15px;
+		}
+		.title{
+			font-size: 28pt;
+		  }
+		h2{
+			font-size: 18px;
+			margin-bottom: 10px;
+		  }
+		  
+	}
+}
+
+.module {
+    position: relative;
+    display: block;
+    padding: 50px 20px;
+    overflow: hidden;
+    margin-top: -1px;
+}
+.module-top{
+    margin-top: 500px;
+    @include media-query($on-palm) {
+       margin-top: 300px;
+    }
 }
 
 .page-content {
@@ -277,13 +369,8 @@
 		padding-top:20px;
 	}
 }
-.module {
-    position: relative;
-    display: block;
-    padding: 50px 20px;
-    overflow: hidden;
-    margin-top: -1px;
-}
+
+
 .grey {
     background-color: #edeef0;
 	}
