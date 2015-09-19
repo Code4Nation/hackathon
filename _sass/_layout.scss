@@ -87,6 +87,10 @@
           color: white;
 		}
 	}
+	.open>a{
+	   background-color: rgba(0,0,0,0.8);
+	   color: white;
+	}
 	.open>a:focus{
 	   background-color: rgba(0,0,0,0.8);
 	   color: white;
