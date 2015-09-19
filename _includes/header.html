@@ -20,7 +20,7 @@
                        {% assign pages = site.pages | sort:"order" %}
 						{% for page in pages %}
 						  {% if page.title %}
-						      {% if page.order <= 4 %}
+						      {% if page.order <= 3 %}
 							  <li><a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
 							  {% endif %}
 						  {% endif %}
@@ -31,7 +31,7 @@
 							{% assign pages = site.pages | sort:"order" %}
 							{% for page in pages %}
 							  {% if page.title %}
-								  {% if page.order > 4 %}
+								  {% if page.order > 3 %}
 								  <li><a class="page-link-child" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
 								  {% endif %}
 							  {% endif %}
