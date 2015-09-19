@@ -67,6 +67,15 @@
           color: white;
 		}
     }
+    
+    .text-white-mdk { 
+		color: white; 
+		
+		&:hover{
+		  background-color: rgba(0,0,0,0.8);
+          color: white;
+		}
+	}
 
     @include media-query($on-palm) {
         .text-white-mdk { 
