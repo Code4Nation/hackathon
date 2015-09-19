@@ -142,7 +142,7 @@
 .navbar-collapse{
 	   margin-top:10px;
 	   @include media-query($on-palm) {
-	      background-color: rgba(255,255,255,0.9);
+	      background-color: rgba(255,255,255,0.95);
 	      color:white;
 	   }
 }
