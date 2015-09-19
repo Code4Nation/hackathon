@@ -103,13 +103,12 @@
     }
 }
 
-.dropdown-menu>li>a{
-   padding-top:10px;
-   padding-bottom:10px;
-}
+
 .navbar-nav {
-    .open .dropdown-menu>li>a {
-		
+    .dropdown-menu>li>a{
+	   padding-top:10px;
+	   padding-bottom:10px;
+	}
     @include media-query($on-palm) {
         .dropdown-toggle { 
 		  display: none;
