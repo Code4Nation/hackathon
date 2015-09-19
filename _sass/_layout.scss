@@ -170,7 +170,7 @@
 	background-size: cover;
 	width: 100%;
 	height: 706px;
-	background-image: url('{{ site.baseurl }}/img/bendera.png');
+	background-image: url('../img/bendera.png');
 	@include media-query($on-palm) {
 		height: auto;
 	}
