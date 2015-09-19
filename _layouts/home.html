@@ -39,7 +39,7 @@ layout: default
 			   $('.thumb').show();
 			}else{
 			   $('.thumb').hide();
-			   $('.merdeka').attr('style',"background-image: url('{{ site.baseurl }}/img/c4n_.png');background-position: 50% 100%;");
+			   $('.merdeka').attr('style',"background-image: url('{{ site.baseurl }}/img/c4n_.png');height:"+$(document).height()+"px;");
 			}
 		};
 		$(window).scroll(setbg);
