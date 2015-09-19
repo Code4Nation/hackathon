@@ -50,7 +50,7 @@ layout: default
 		background-size: cover;
 		width: 100%;
 		height: 706px;
-		background-image: url('/hackathon/img/bendera.png');
+		background-image: url('{{ site.baseurl }}/img/bendera.png');
 	}
 	.xr {
 		background-color: #bb2526;
@@ -59,17 +59,23 @@ layout: default
 		color: #bb2526;
 	}
 	</style>
-	<div class="merdeka"></div>
-	<div class="jumbotron">
-		  <div class="container text-center">
-		  <div class="thumb">
-		  <img src="{{ site.baseurl }}/img/merdeka.png" alt="Hackathon Merdeka">
-		  </div>
-		  <div class="row"> </div>
-		  </div>
+	<div class="merdeka">
+		<div class="container text-center"style="background-color:transparent;">
+			<div class="thumb">
+				<div class="content">
+				<div class="title">HACKATHON MERDEKA 2.0</div>
+				<h2><i class="fa fa-calendar"></i> 24 - 25 Oktober 2015</h2>
+				<h2><i class="fa fa-map-o"></i> Serentak di 17 Kota di Indonesia</h2>
+				<a href="/registrasi" class="btn btn-danger">Daftar</a>
+				</div>
+			</div>                       
+		</div>
 	</div>
-	<div class="module white" style="padding-top: 20px;">
+	<div class="module white" style="margin-top: 500px;">
 		<div class="container" style="color:#bb2526;">
+		<div class='content-container'>
+			<img src="{{ site.baseurl }}/img/h2/info/peta.png" alt="" />
+		</div>
 		<article class="post-content text-center">
 		{{ content }}
 
