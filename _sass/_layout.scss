@@ -259,6 +259,12 @@
 	  }
 	}
 }
+.module-top{
+    margin-top: 500px;
+    @include media-query($on-palm) {
+       margin-top: 350px;
+    }
+}
 
 
 .page-content {
