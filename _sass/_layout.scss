@@ -160,7 +160,21 @@
     min-height: 600px;
  }
  
-
+.merdeka {
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-position: center 0;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 706px;
+	background-image: url('{{ site.baseurl }}/img/bendera.png');
+	@include media-query($on-palm) {
+		height: auto;
+	  }
+	}
+}
 .thumb { 
     background-color: transparent; 
     padding-top: 180px;
