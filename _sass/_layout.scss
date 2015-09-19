@@ -66,11 +66,11 @@
         text-transform: uppercase;
         
         &:hover{
-		  background-color: rgba(0,0,0,0.8);
+		  background-color: rgba(0,0,0,0.5);
           color: white;
 		}
 		&:focus{
-		  background-color: rgba(0,0,0,0.8);
+		  background-color: rgba(0,0,0,0.5);
           color: white;
 		}
     }
@@ -79,24 +79,24 @@
 		color: white; 
 		
 		&:hover{
-		  background-color: rgba(0,0,0,0.8);
+		  background-color: rgba(0,0,0,0.5);
           color: white;
 		}
 		&:focus{
-		  background-color: rgba(0,0,0,0.8);
+		  background-color: rgba(0,0,0,0.5);
           color: white;
 		}
 	}
 	.open>a{
-	   background-color: rgba(0,0,0,0.8);
+	   background-color: rgba(0,0,0,0.5);
 	   color: white;
 	}
 	.open>a:focus{
-	   background-color: rgba(0,0,0,0.8);
+	   background-color: rgba(0,0,0,0.5);
 	   color: white;
 	}
 	.open>a:hover{
-	   background-color: rgba(0,0,0,0.8);
+	   background-color: rgba(0,0,0,0.5);
 	   color: white;
 	}
 
