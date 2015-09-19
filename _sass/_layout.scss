@@ -50,8 +50,13 @@
 
 .nav {
     line-height: $spacing-unit;
+    
+    .fa {
+		font-size: 10px;
+        padding-left:2px;
+	}
 
-    .page-link {
+    .page-link, .page-link-child {
         color: lighten($text-color, 30%);
         font-size: 14px;
         font-weight: 400;
@@ -60,11 +65,6 @@
         vertical-align: bottom;
         text-transform: uppercase;
         
-        .fa{
-		  font-size: 10px;
-          padding-left:2px;
-		}
-
         &:hover{
 		  background-color: rgba(0,0,0,0.8);
           color: white;
