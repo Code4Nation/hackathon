@@ -84,6 +84,16 @@
     }
 }
 
+	.navbar-toggle{
+			border-color:lighten($text-color, 30%);;
+			margin-bottom: 20px;
+			margin-top:18px;
+		}
+	.navbar-toggle .icon-bar {
+		background-color: lighten($text-color, 30%);;
+	}
+
+
 .navbar-collapse{
 	   margin-top:10px;
 	   @include media-query($on-palm) {
