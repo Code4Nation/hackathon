@@ -93,9 +93,13 @@
 		}
     }
 }
-.nav .open>a, .nav .open>a:focus, .nav .open>a:hover{
+.nav .open>a:focus, .nav .open>a:hover{
    background-color: rgba(0,0,0,0.8);
    color: white;
+}
+.navbar-nav .open .dropdown-menu>li>a {
+    padding-top:10px;
+    padding-bottom:10px;
 }
 .navbar-nav .dropdown-toggle {
     @include media-query($on-palm) {
