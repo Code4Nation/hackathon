@@ -97,15 +97,21 @@
    background-color: rgba(0,0,0,0.8);
    color: white;
 }
-
-	.navbar-toggle{
-			border-color:lighten($text-color, 30%);;
-			margin-bottom: 20px;
-			margin-top:18px;
+.navbar-nav .dropdown-toggle {
+    @include media-query($on-palm) {
+        .dropdown-toggle { 
+		  display: none;
 		}
-	.navbar-toggle .icon-bar {
-		background-color: lighten($text-color, 30%);;
+    }
+}
+.navbar-toggle{
+		border-color:lighten($text-color, 30%);;
+		margin-bottom: 20px;
+		margin-top:18px;
 	}
+.navbar-toggle .icon-bar {
+	background-color: lighten($text-color, 30%);;
+}
 
 
 .navbar-collapse{
