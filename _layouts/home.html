@@ -33,7 +33,12 @@ layout: default
 					$('.thumb').show();
 				}else{
 					$('.thumb').hide();
-					$('.merdeka').attr('style',"background-image: url('{{ site.baseurl }}/img/c4n_.png');background-position:center 100%;");
+					var width = (this.window.innerWidth > 0) ? this.window.innerWidth : this.screen.width;
+					if (width>=600){
+						$('.merdeka').attr('style',"background-image: url('{{ site.baseurl }}/img/c4n_.png');background-position: center 95%;");
+					}else{
+						$('.merdeka').attr('style',"background-image: url('{{ site.baseurl }}/img/c4n_.png');background-position: 95% 95%;");
+					}
 				}
 			};
 			$(window).scroll(setbg);
