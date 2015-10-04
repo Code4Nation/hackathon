@@ -1,5 +1,5 @@
 ---
-title: Peraturan dan Panduan
+title: Peraturan & Panduan
 permalink: /peraturan-dan-panduan/
 order: 4
 ---

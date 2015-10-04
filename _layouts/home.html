@@ -2,153 +2,193 @@
 layout: default
 ---
 <div class="post">
+	<script>
+		$( document ).ready(function() {
+			$('.site-header').attr('style','border:0px;');
+			$('.page-link').addClass("text-white-mdk");
+			$('.dropdown-toggle').addClass("text-white-mdk");
+			// Disable scroll zooming and bind back the click event
+			// From http://stackoverflow.com/questions/21992498/disable-mouse-scroll-wheel-zoom-on-embedded-google-maps#answer-25904582
+			var onMapMouseleaveHandler = function (event) {
+				var that = $(this);
+				that.on('click', onMapClickHandler);
+				that.off('mouseleave', onMapMouseleaveHandler);
+				that.find('iframe').css("pointer-events", "none");
+			}
+			var onMapClickHandler = function (event) {
+				var that = $(this);
+				// Disable the click handler until the user leaves the map area
+				that.off('click', onMapClickHandler);
+				// Enable scrolling zoom
+				that.find('iframe').css("pointer-events", "auto");
+				// Handle the mouse leave event
+				that.on('mouseleave', onMapMouseleaveHandler);
+			}
+			// Enable map zooming with mouse scroll when the user clicks the map
+			$('.maps.embed-container').on('click', onMapClickHandler);
+			var setbg=function(){
+				var scroll = $(window).scrollTop();
+				if (scroll<700){
+					$('.merdeka').attr('style','');
+					$('.thumb').show();
+				}else{
+					$('.thumb').hide();
+					var width = (this.window.innerWidth > 0) ? this.window.innerWidth : this.screen.width;
+					if (width>=600){
+						$('.merdeka').attr('style',"background-image: url('{{ site.baseurl }}/img/c4n_.png');background-position: center 95%;background-size: inherit;");
+					}else{
+						$('.merdeka').attr('style',"background-image: url('{{ site.baseurl }}/img/c4n_.png');background-position: 92% 100%;background-size: inherit;");
+					}
+				}
+			};
+			$(window).scroll(setbg);
+			setbg();
+		});
+	</script>
+	<style>
 
-<script>
-$( document ).ready(function() {
-    $('.site-header').attr('style','border:0px;');
-	$('.page-link').addClass("text-white-mdk");
-});
-</script>
-<style>
- .merdeka {
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-position: center 0;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 730px;
-	background-image: url('{{ site.baseurl }}/img/bendera.png');
-	z-index:-1;
-}
-</style>
-<div class="merdeka"></div>
-<div class="jumbotron">
-      <div class="container text-center">
-	  <div class="thumb">
-	  <img src="{{ site.baseurl }}/img/merdeka.png" alt="Hackathon Merdeka">
-	  </div>
-	  <div class="row"> </div>
-	  </div>
-</div>
+		.xr {
+			background-color: #bb2526;
+			width: 30px;
+			height: 3px;
+			color: #bb2526;
+			margin-bottom: 20px;
+		}
+		.xr-white {
+			background-color: white;
+			width: 30px;
+			height: 3px;
+			color: #bb2526;
+			margin-bottom: 20px;
+		}
 
-<div class="module white">
-    <div class="container">
-	<article class="teaser">
-	<iframe src="https://www.youtube.com/embed/6wbYu-CmUXg" frameborder="0" allowfullscreen=""></iframe>
-	</article>
-	<center><div style="
-    background-color: #bb2526;
-    width: 30px;
-    height: 3px;
-    color: #bb2526;
-    "></div></center>
-	<article class="post-content text-center" style="color:#bb2526;padding-top:20px;">
-	<h2>Hackathon Merdeka 1.0</h2>
-	</article>
+		.navbar-toggle{
+			border-color:white;
+			margin-bottom: 20px;
+			margin-top:18px;
+		}
+		.navbar-toggle .icon-bar {
+			background-color: white;
+		}
+	</style>
+	<div class="merdeka">
+		<div class="container text-center"style="background-color:transparent;">
+			<div class="thumb">
+				<div class="content">
+					<div class="title">HACKATHON MERDEKA 2.0</div>
+					<h2><i class="fa fa-calendar"></i> 24 - 25 Oktober 2015</h2>
+					<h2><i class="fa fa-map-o"></i> Serentak di 26 Kota di Indonesia</h2>
+					<a href="{{ site.baseurl }}/registrasi" class="btn btn-danger">Daftar</a>
+				</div>
+			</div>
+		</div>
 	</div>
-</div>
+	<div class="module white module-top">
+		<img src="{{ site.baseurl }}/img/h2/info/peta.png" alt="" style="width:100%;"/>
+		<div class="container" style="color:#bb2526;padding-top:50px;">
+			<center><div class="xr"></div></center>
+			<article class="post-content text-center">
+				{{ content }}
 
-<div class="module red" style="padding-top: 100px;">
-    <div class="container">
-    <article class="post-content text-center">
-	{{ content }}
-	Ayo bersama-sama kita berkontribusi pada negara untuk menyelesaikan masalah kependudukan!
-	</article>
-	<div class='content-container  embed-container  maps'>
-		<iframe style="pointer-events: none;" src="https://www.google.com/maps/d/u/5/embed?mid=z4pTcO-jW240.kNRfjhoSCo-s" class="iframe-map" scrolling="no" frameborder="0" marginheight="0" marginwidth="0"></iframe>
+				Ayo bersama-sama kita berkontribusi pada negara untuk menyelesaikan masalah kependudukan!
+			</article>
+		</div>
+		<div class='content-container  embed-container  maps'>
+			<iframe style="pointer-events: none;" src="https://www.google.com/maps/d/u/5/embed?mid=z4pTcO-jW240.kNRfjhoSCo-s" class="iframe-map" scrolling="no" frameborder="0" marginheight="0" marginwidth="0"></iframe>
+		</div>
+		<div class="container" style="color:#bb2526;padding-top:30px;">
+			<article class="post-content text-center">
+				Harapan kami, Hackathon Merdeka 2.0 bisa menjadi sebuah bentuk "Sumpah Pemuda" modern.
+				<br>
+				<h2 style="padding-top: 15px;">Merdeka Dengan Kode, MDK!</h2>
+			</article>
+		</div>
+
 	</div>
-	<article class="post-content text-center" style="padding-top: 30px;">
-	Harapan kami, Hackathon Merdeka 2.0 bisa menjadi sebuah bentuk "Sumpah Pemuda" modern. 
-	<br>
-	<h2 style="padding-top: 15px;">Merdeka Dengan Kode, MDK!</h2>
-	</article>
+	<div class="module red">
+		<div class="container">
+			<article class="teaser">
+				<iframe src="https://www.youtube.com/embed/6wbYu-CmUXg" frameborder="0" allowfullscreen></iframe>
+			</article>
+			<center><div class="xr-white"></div></center>
+			<article class="post-content text-center">
+				<h2>Hackathon Merdeka 1.0</h2>
+				<hr>
+				<br>
+				<b>5 aplikasi dari Tim-Tim Pemenang Hackathon Merdeka 1.0 </b>
+				<div class="row" style="padding-top:15px;">
+					<div class="col-lg-4 text-center">
+						<span>Pasar Laut - Tim Pasar Laut</span>
+						<iframe class="iframe-movie" src="https://www.youtube.com/embed/arlnzivE6t0" frameborder="0" allowfullscreen></iframe>
+					</div>
+					<div class="col-lg-4 text-center">
+						<span>Pantau Harga - Tim Coding Stelsel</span>
+						<iframe class="iframe-movie" src="https://www.youtube.com/embed/NfYMcVU_BYs" frameborder="0" allowfullscreen></iframe>
+					</div>
+					<div class="col-lg-4 text-center">
+						<span>Lima Kilo - Tim Enjel Salsabila</span>
+						<iframe class="iframe-movie" src="https://www.youtube.com/embed/pp-rneHU0kY" frameborder="0" allowfullscreen></iframe>
+					</div>
+				</div>
+				<div class="row" style="padding-top:15px;">
+					<div class="col-lg-2 text-center">&nbsp</div>
+					<div class="col-lg-4 text-center">
+						<span>Cagar - Tim Alfa Orion dengan aplikasi</span>
+						<iframe class="iframe-movie" src="https://www.youtube.com/embed/rxrUSyNhCaU" frameborder="0" allowfullscreen></iframe>
+					</div>
+					<div class="col-lg-4 text-center">
+						<span>Curhat Harga - Tim Baculsoft</span>
+						<iframe class="iframe-movie" src="https://www.youtube.com/embed/OcliTU5wolA" frameborder="0" allowfullscreen></iframe>
+					</div>
+					<div class="col-lg-2 text-center">&nbsp</div>
+				</div>
+			</article>
+		</div>
 	</div>
-</div>
+	<div class="merdeka-div"></div>
+	<div class="module white" style="padding-top: 50px;">
+		<div class="container">
+			<article class="post-content text-center" style="color:#bb2526;">
+				<div class="row" style="padding-top:30px;">
+					<div class="col-lg-3">
+						<center><div class="img-circle-mdk"><i class="fa fa-bullhorn fa-4"></i></div></center>
+						<article class="post-content text-center" style="color:#bb2526;">
+							<h2>Ikuti terus pengumuman dari kami</h2>
+						</article>
+					</div>
+					<div class="col-lg-3">
+						<center><div class="img-circle-mdk"><i class="fa fa-users fa-4"></i></div></center>
+						<article class="post-content text-center" style="color:#bb2526;">
+							<h2>Ajak teman kamu dan bentuk tim</h2>
+						</article>
+					</div>
+					<div class="col-lg-3">
+						<center><div class="img-circle-mdk"><i class="fa fa-pencil-square-o"></i></div></center>
+						<article class="post-content text-center" style="color:#bb2526;">
 
-<script>
-// Disable scroll zooming and bind back the click event
-// From http://stackoverflow.com/questions/21992498/disable-mouse-scroll-wheel-zoom-on-embedded-google-maps#answer-25904582
-var onMapMouseleaveHandler = function (event) {
-  var that = $(this);
-
-  that.on('click', onMapClickHandler);
-  that.off('mouseleave', onMapMouseleaveHandler);
-  that.find('iframe').css("pointer-events", "none");
-}
-
-var onMapClickHandler = function (event) {
-  var that = $(this);
-
-  // Disable the click handler until the user leaves the map area
-  that.off('click', onMapClickHandler);
-
-  // Enable scrolling zoom
-  that.find('iframe').css("pointer-events", "auto");
-
-  // Handle the mouse leave event
-  that.on('mouseleave', onMapMouseleaveHandler);
-}
-
-// Enable map zooming with mouse scroll when the user clicks the map
-$('.maps.embed-container').on('click', onMapClickHandler);
-</script>
-
-<div class="module white" style="padding-top: 100px;">
-    <div class="container">
-	<article class="post-content text-center" style="color:#bb2526;">
-	<h2>Anda tertarik untuk mendaftar?</h2>
+							<h2><a href="registrasi" style="color:#bb2526;text-decoration: none;">Daftar segera di sini</a></h2>
+						</article>
+					</div>
+					<div class="col-lg-3">
+						<center><div class="img-circle-mdk"><i class="fa fa-leanpub fa-4"></i></div></center>
+						<article class="post-content text-center" style="color:#bb2526;">
+							<h2><a href="tema-dan-tantangan" style="color:#bb2526;text-decoration: none;">Pelajari tema dan tantangan Hackathon Merdeka 2.0</a></h2>
+						</article>
+					</div>
+				</div>
+			</article>
+		</div>
+	</div>
 	<hr>
-	<div class="row" style="padding-top:30px;">
-        <div class="col-lg-4">
-		<center><div class="img-circle-mdk"><i class="fa fa-bullhorn fa-4"></i></div></center>
-		 <article class="post-content text-center" style="color:#bb2526;">
-		 <h2>Ikuti terus pengumuman dari kami</h2>
-		 </article>
-		</div>
-		<div class="col-lg-4">
-		<center><div class="img-circle-mdk"><i class="fa fa-users fa-4"></i></div></center>
-		 <article class="post-content text-center" style="color:#bb2526;">
-		 <h2>Ajak teman kamu dan bentuk tim</h2>
-		 </article>
-		</div>
-		<div class="col-lg-4">
-		<center><div class="img-circle-mdk"><i class="fa fa-pencil-square-o"></i></div></center>
-		 <article class="post-content text-center" style="color:#bb2526;">
-		 <h2><a href="registrasi" style="color:#bb2526;text-decoration: none;">Daftar segera di sini</a></h2>
-		 </article>
+	<div class="module white" style="padding-top: 100px;">
+		<div class="container">
+			<article class="post-content text-center" style="color:#bb2526;">
+				<h2>Diselenggarakan oleh:</h2>
+				<center>
+					<div class="xr"></div>
+					<a href="http://code4nation.id" target="_blank"><img src="{{ site.baseurl }}/img/C4N1.png" width="342" height="64" alt="" title="Code4Nation" ></a>
+				</center>
+			</article>
 		</div>
 	</div>
-	<div class="row" style="padding-top:30px;">
-        <div class="col-lg-4">&nbsp;</div>
-		<div class="col-lg-4">
-		<center><div class="img-circle-mdk"><i class="fa fa-leanpub fa-4"></i></div></center>
-		 <article class="post-content text-center" style="color:#bb2526;">
-		 <h2><a href="tema-dan-tantangan" style="color:#bb2526;text-decoration: none;">Pelajari tema dan tantangan Hackathon Merdeka 2.0</a></h2>
-		 </article>
-		</div>
-		<div class="col-lg-4">&nbsp;</div>
-	</div>
-	</article>
-	</div>
-</div>
-<hr>
-<div class="module white" style="padding-top: 100px;">
-    <div class="container">
-	<article class="post-content text-center" style="color:#bb2526;">
-	<h2>Diselenggarakan oleh:</h2>
-	<center><div style="
-    background-color: #bb2526;
-    width: 30px;
-    height: 3px;
-    color: #bb2526;
-    "></div></center>
-	<center style="padding-top:50px;">
-	<a href="http://code4nation.id" target="_blank"><img src="{{ site.baseurl }}/img/C4N1.png" width="342" height="64" alt="" title="Code4Nation" ></a>
-	</center>
-	</article>
-	</div>
-</div>
-
 </div>

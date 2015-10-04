@@ -1,23 +1,24 @@
-<!DOCTYPE html>
-<html>
+---
+layout: default
+---
 
-  {% include head.html %}
+<div class="post">
+<style>
+.post-header {
+    background-color: transparent;
+    background-image: url('{{ site.baseurl }}/img/7-300x187.jpg');
+    background-repeat: repeat-x;
+}
+</style>
+  <header class="post-header">
+    <h1 class="container post-title">{{ page.title }}</h1>
+  </header>
 
-  <body>
-
-    {% include header.html %}
-    <style>
-     .post{
-          min-height: initial;
-      }
-    </style>
-
-    {% include content.html %}
-	<div class="row">
-    <article class="container">
+  <article class="container post-content">
+    {{ content }}
+  </article>
+  <div class="container">
 	<iframe src="https://docs.google.com/forms/d/1hs5dCbxoLGHoc4cWQATr-5n72pRsDqp7GtAd8vOrQFE/viewform?embedded=true" class="iframe-gdoc" frameborder="0" marginheight="0" marginwidth="0"></iframe>
-    </article>
-	</div>
-  </body>
+  </div>
 
-</html>
+</div>
