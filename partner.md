@@ -23,7 +23,7 @@ dan khusus media, silakan hubungi marinasilviak@gmail.com
 						<h4>Cloud Provider</h4>
 						<img src="{{ site.baseurl }}/img/h2/sponsor/CloudKilat.jpg" alt="" style="width:100%;"/>
 					</div>
-					<div class="col-lg-6">
+					<div class="col-lg-5">
 						<h4>Media Partner</h4>
 						<img src="{{ site.baseurl }}/img/h2/sponsor/Lip6com super-hires.png" alt="" style="width:100%;"/>
 						<img src="{{ site.baseurl }}/img/h2/sponsor/Vidiocom.png" alt="" style="width:100%;"/>
@@ -34,7 +34,7 @@ dan khusus media, silakan hubungi marinasilviak@gmail.com
 						<h4>T-Shirt</h4>
 						<img src="{{ site.baseurl }}/img/h2/sponsor/foreverstore.jpg" alt="" style="width:100%;"/>
 					</div>
-					<div class="col-lg-6">
+					<div class="col-lg-5">
 						<h4>Tech Partner</h4>
 						<img src="{{ site.baseurl }}/img/h2/sponsor/KitaBisa.png" alt="" style="width:100%;"/>
 					</div>
@@ -49,11 +49,11 @@ dan khusus media, silakan hubungi marinasilviak@gmail.com
 				<hr>
 				<div class="container">
 				<div class="row" style="padding-top:30px;">
-					<div class="col-lg-3">
+					<div class="col-lg-5">
 						<h4>Official Gathering Place</h4>
 						<img src="{{ site.baseurl }}/img/h2/sponsor/bandung/Co n Co - Official Gathering Place.png" alt="" style="width:100%;"/>
 					</div>
-					<div class="col-lg-3">
+					<div class="col-lg-5">
 						<h4>Community Partner</h4>
 						<img src="{{ site.baseurl }}/img/h2/sponsor/bandung/Fowab - Community Partner.png" alt="" style="width:100%;"/>
 					</div>
