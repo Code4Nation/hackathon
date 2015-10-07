@@ -8,33 +8,56 @@ Ini adalah kesempatan untuk Anda berkontribusi dan bertemu dengan para developer
 Untuk membahas partnership, silakan hubungi juan.tan.kang@gmail.com
 dan khusus media, silakan hubungi marinasilviak@gmail.com
 
-##Bersama Partner-Partner Nasional:
-
-####Ultimate Partner
-![]({{ site.baseurl }}/img/h2/sponsor/Telkom.jpg)
-
-####Cloud Provider
-![]({{ site.baseurl }}/img/h2/sponsor/CloudKilat.jpg)
-
-####Media Partner
-![]({{ site.baseurl }}/img/h2/sponsor/Lip6com super-hires.png)
-![]({{ site.baseurl }}/img/h2/sponsor/Vidiocom.png)
-
-####T-Shirt
-![]({{ site.baseurl }}/img/h2/sponsor/foreverstore.jpg)
-
-####Tech Partner
-![]({{ site.baseurl }}/img/h2/sponsor/KitaBisa.png)
-
-####Community Partner
-![]({{ site.baseurl }}/img/h2/sponsor/Agnium.jpg)
-
-##Serta Partner-Partner Lokal:
-
-###Bandung:
-
-####Official Gathering Place
-![]({{ site.baseurl }}/img/h2/sponsor/bandung/Co n Co - Official Gathering Place.png)
-
-####Community Partner
-![]({{ site.baseurl }}/img/h2/sponsor/bandung/Fowab - Community Partner.png)
+<div class="module white" style="margin-top: 0px;">
+		<div class="container">
+			<article class="post-content text-center" style="color:#bb2526;">
+				<h2>Bersama Partner-Partner Nasional:</h2>
+				<hr>
+				<div class="container">
+				<div class="row" style="padding-top:30px;">
+					<div class="col-lg-3">
+						<h4>Ultimate Partner</h4>
+						<img src="{{ site.baseurl }}/img/h2/sponsor/Telkom.jpg" alt="" style="width:100%;"/>
+					</div>
+					<div class="col-lg-3">
+						<h4>Cloud Provider</h4>
+						<img src="{{ site.baseurl }}/img/h2/sponsor/CloudKilat.jpg" alt="" style="width:100%;"/>
+					</div>
+					<div class="col-lg-6">
+						<h4>Media Partner</h4>
+						<img src="{{ site.baseurl }}/img/h2/sponsor/Lip6com super-hires.png" alt="" style="width:100%;"/>
+						<img src="{{ site.baseurl }}/img/h2/sponsor/Vidiocom.png" alt="" style="width:100%;"/>
+					</div>
+				</div>
+				<div class="row" style="padding-top:30px;">
+					<div class="col-lg-3">
+						<h4>T-Shirt</h4>
+						<img src="{{ site.baseurl }}/img/h2/sponsor/foreverstore.jpg" alt="" style="width:100%;"/>
+					</div>
+					<div class="col-lg-6">
+						<h4>Tech Partner</h4>
+						<img src="{{ site.baseurl }}/img/h2/sponsor/KitaBisa.png" alt="" style="width:100%;"/>
+					</div>
+					<div class="col-lg-3">
+						<h4>Community Partner</h4>
+						<img src="{{ site.baseurl }}/img/h2/sponsor/Agnium.jpg" alt="" style="width:100%;"/>
+					</div>
+				</div>
+				<h2>Serta Partner-Partner Lokal:</h2>
+				<hr>
+				<h3>Bandung</h3>
+				<hr>
+				<div class="container">
+				<div class="row" style="padding-top:30px;">
+					<div class="col-lg-3">
+						<h4>Official Gathering Place</h4>
+						<img src="{{ site.baseurl }}/img/h2/sponsor/bandung/Co n Co - Official Gathering Place.png" alt="" style="width:100%;"/>
+					</div>
+					<div class="col-lg-3">
+						<h4>Community Partner</h4>
+						<img src="{{ site.baseurl }}/img/h2/sponsor/bandung/Fowab - Community Partner.png" alt="" style="width:100%;"/>
+					</div>
+				</div>
+			</article>
+		</div>
+	</div>
