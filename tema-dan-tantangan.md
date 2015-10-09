@@ -43,3 +43,12 @@ Seperti biasa, kita mengharapkan yang tidak terduga, semoga solusi-solusi kreati
 ##Kemungkinan Solusi
 - - -
 Banyak cara untuk melakukan pendataan, dari sensus maupun survey. Pikirkan juga pendataan lain, misalkan dilakukan sukarela karena insentif tertentu, bahkan mungkin secara tidak langsung.
+
+##Infografis
+- - -
+
+![]({{ site.baseurl }}/img/h2/info/penduduk.jpg)
+
+Untuk kependidikan, berikut ada [infografik tambahan](http://bengkelkreatif.com/hackathon/):
+
+![]({{ site.baseurl }}/img/h2/info/pendidik.jpg)
