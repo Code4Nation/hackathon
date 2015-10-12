@@ -1,8 +1,11 @@
-title: Hackathon Merdeka
-email: hackathon@code4nation.org
-baseurl: "/hackathon"
-url: "http://code4nation.github.io/"
-markdown: kramdown
+title: "Hackathon Merdeka 2.0"
+description: "Tujuan dari Hackathon Merdeka 2.0 adalah mengumpulkan solusi untuk pemecahan masalah pengumpulan data yang cepat dan akurat tentang kependudukan."
+actioncall: "Setelah sukses menyelenggarakan Hackathon Merdeka yang pertama pada bulan Agustus lalu, Code4Nation kembali mengadakan Hackathon Merdeka pada tanggal 24-25 Oktober serentak di 28 kota di penjuru Indonesia dan para pemenangnya akan dikumpulkan di Jakarta pada momen Hari Sumpah Pemuda 28 Oktober 2015. Ayo bersama-sama kita berkontribusi pada negara untuk menyelesaikan masalah kependudukan!"
+email: "hackathon@code4nation.org"
+author: "https://code4nation.id"
+baseurl: ""
+url: "http://hackathonmerdeka.id"
+markdown: "kramdown"
 timezone: "Asia/Jakarta"
 defaults:
   -

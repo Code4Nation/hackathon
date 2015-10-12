@@ -1,5 +1,5 @@
 ---
-title: Tema dan Tantangan
+title: Tema & Tantangan
 permalink: /tema-dan-tantangan/
 order: 3
 ---
@@ -31,8 +31,24 @@ Aspek, sudut pandang dan manifestasi dari satu masalah pokok ini bisa sangat ber
 - Mempermudah antrian masuk rumah sakit
 - Mempermudah dan mempercepat prosedur pendataan gawat darurat
 - Mempermudah antrian pengambilan obat di apotik
+- Pendaftaran diri belum menjadi prioritas karena susah / jauh
+- Pendaftaran anak tidak dilakukan karena alasan dari orangtua
+- Identitas hukum saling menjadi keperluan yang diperlukan
 - dst. dsb.
 
 Luasnya cakupan permasalahan dan ruang untuk solusi kreatif diharapkan akan cukup besar bagi para peserta di seluruh Indonesia untuk mengusung karya-karyanya. 
 
-As usual, we expect the unexpected, we hope to see creative solutions.
+Seperti biasa, kita mengharapkan yang tidak terduga, semoga solusi-solusi kreatif bermunculan.
+
+##Kemungkinan Solusi
+- - -
+Banyak cara untuk melakukan pendataan, dari sensus maupun survey. Pikirkan juga pendataan lain, misalkan dilakukan sukarela karena insentif tertentu, bahkan mungkin secara tidak langsung.
+
+##Infografis
+- - -
+
+![]({{ site.baseurl }}/img/h2/info/penduduk.jpg)
+
+Untuk kependidikan, berikut ada [infografik tambahan](http://bengkelkreatif.com/hackathon/):
+
+![]({{ site.baseurl }}/img/h2/info/pendidik.jpg)

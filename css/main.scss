@@ -14,7 +14,7 @@ $base-line-height: 1.5;
 $spacing-unit:     45px;
 
 $text-color:       #111;
-$background-color: #fdfdfd;
+$background-color: rgba(255,255,255,0.97);/*#fdfdfd;*/
 $brand-color:      #2a7ae2;
 
 $grey-color:       #828282;
@@ -24,8 +24,7 @@ $grey-color-dark:  darken($grey-color, 25%);
 // Width of the content area
 $content-width:    800px;
 
-$on-palm:          800px;
-
+$on-palm:          769px;
 
 
 // Using media queries with like this:
