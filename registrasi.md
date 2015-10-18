@@ -7,5 +7,5 @@ layout: registrasi
 
 ## Pendaftaran
 - - -
-Pendaftaran telah ditutup, kami seluruh Panitia Hackathon Merdeka 2.0 mengucapkan terimkasih banyak atas partisipasi. 
+Pendaftaran telah ditutup, kami seluruh Panitia Hackathon Merdeka 2.0 mengucapkan terimakasih banyak atas partisipasi rekan-rekan semua. 
 Terus ikuti informasi dari kami.
