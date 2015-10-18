@@ -4,7 +4,7 @@ actioncall: "Setelah sukses menyelenggarakan Hackathon Merdeka yang pertama pada
 email: "hackathon@code4nation.org"
 author: "https://code4nation.id"
 baseurl: ""
-url: "http://hackathonmerdeka.id"
+url: "/"
 markdown: "kramdown"
 timezone: "Asia/Jakarta"
 defaults:
