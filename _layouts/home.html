@@ -29,10 +29,11 @@ layout: default
 		var setbg=function(){
 			var scroll = $(window).scrollTop();
 			if (scroll<700){
-				$('.merdeka').attr('style','');
+				$('.merdeka').hide();
 				$('.thumb').show();
 			}else{
 				$('.thumb').hide();
+				$('.merdeka').show();
 				var width = (this.window.innerWidth > 0) ? this.window.innerWidth : this.screen.width;
 				if (width>=600){
 					$('.merdeka').attr('style',"background-image: url('{{ site.baseurl }}/img/c4n_.png');background-position: center 95%;background-size: inherit;");
