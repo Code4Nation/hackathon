@@ -6,7 +6,7 @@ order: 6
 
 ##Tentang Hackathon Merdeka
 - - -
-**Hackathon Merdeka** merupakan sebuah inisiatif untuk menginisiasi gerakan besar [Code4Nation](http://code4nation.id) sebagai salah satu bentuk pemanfaatan teknologi informasi guna memecahkan permasalahan nasional. Berbagai gerakan yang sudah dilakukan (e.g., kawalpemilu.org, kawalmenteri.org, kawalpemilukada.org, dll) telah membantu pemerintah dan masyarakat. Code4nation.org diharapkan dapat menjadi pemersatu gerakan-gerakan yang ada sehingga semakin banyak talenta di Indonesia yang peduli dan ingin bergabung dapat berkolaborasi dengan lebih baik.
+**Hackathon Merdeka** merupakan sebuah inisiatif untuk menginisiasi gerakan besar [Code4Nation](http://code4nation.id) sebagai salah satu bentuk pemanfaatan teknologi informasi guna memecahkan permasalahan nasional. Berbagai gerakan yang sudah dilakukan (e.g., [kawalpemilu.org](http://kawalpemilu.org), [kawalmenteri.org](http://kawalmenteri.org), [kawalpilkada.id](https://www.kawalpilkada.id), dll) telah membantu pemerintah dan masyarakat. Code4nation.org diharapkan dapat menjadi pemersatu gerakan-gerakan yang ada sehingga semakin banyak talenta di Indonesia yang peduli dan ingin bergabung dapat berkolaborasi dengan lebih baik.
 
 ##Tentang Code4Nation
 - - -
