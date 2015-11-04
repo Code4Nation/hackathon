@@ -1,10 +1,10 @@
 ---
-title: Hackathon Sebelumnya
-permalink: /hackathon-sebelumnya/
+title: Hackathon Merdeka 1.0
+permalink: /hackathon-mdk-1/
 order: 7
 ---
 
-##Pemenang Hackathon Merdeka Pertama
+##Pemenang Hackathon Merdeka 1.0
 - - -
 TIGA TERBAIK:
 
@@ -17,7 +17,7 @@ SPECIAL CATEGORY:
 - Cakupan Pengguna Terluas (Sistem SMS + Kodepos): Tim Alfa Orion dengan aplikasi: [Ricekicker](https://code4nation.id/c/mdk/tim-alpha-orion)
 - Solusi Paling Out of the Box: Tim Baculsoft dengan aplikasi: [SiKerang](https://code4nation.id/c/mdk/tim-baculsoft)
 
-##Partner Hackathon Merdeka Pertama
+##Partner Hackathon Merdeka 1.0
 - - -
 
 Pemerintah Nasional:
