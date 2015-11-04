@@ -36,6 +36,6 @@ No.	Wilayah
 27	Jayapura
 28	Sydney
 
-##Partner Hackathon Merdeka 1.0
+##Partner Hackathon Merdeka 2.0
 - - -
 {% include partners2.html %}
