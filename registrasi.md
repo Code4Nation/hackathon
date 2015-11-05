@@ -1,10 +1,7 @@
 ---
 title: Registrasi
-permalink: /registrasi/
+permalink: #registrasi
 order: 2
-layout: registrasi
 ---
 
-## Pendaftaran
-- - -
 
