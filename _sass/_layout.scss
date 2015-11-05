@@ -155,6 +155,12 @@
 	      color:white;
 	   }
 }
+.jepret{
+    font-size:12px;
+    @include media-query($on-palm) {
+	      font-size:9px;
+	   }
+}
 
 
 
