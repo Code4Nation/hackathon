@@ -1,6 +1,6 @@
 ---
 title: Registrasi
-permalink: #registrasi
+url: #registrasi
 order: 2
 ---
 

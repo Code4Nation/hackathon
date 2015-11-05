@@ -21,7 +21,7 @@
 						{% for page in pages %}
 						  {% if page.title %}
 						      {% if page.order <= 3 %}
-							  <li><a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
+							  <li><a class="page-link" href="{{ page.url }}">{{ page.title }}</a></li>
 							  {% endif %}
 						  {% endif %}
 						{% endfor %}

@@ -1,5 +1,5 @@
 ---
 title: Tema & Tantangan
-permalink: #tema-dan-tantangan
+url: #tema-dan-tantangan
 order: 3
 ---
