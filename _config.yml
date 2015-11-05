@@ -3,8 +3,8 @@ description: "Tujuan dari Hackathon Merdeka 3.0 adalah untuk membangun solusi IT
 actioncall: "Setelah Hackathon Merdeka 1.0 dan 2.0 berhasil menjaring partisipasi ribuan software developer dari seluruh penjuru Nusantara, kali ini kami berkerjasama dengan KPK dan ICW untuk mengajak diaspora Indonesia dari seluruh penjuru dunia untuk membangun solusi IT untuk membantu permasalahan korupsi dan integritas dalam masyarakat, institusi, dan pemerintahan Indonesia."
 email: "hackathon@code4nation.org"
 author: "https://code4nation.id"
-baseurl: ""
-url: "http://hackathonmerdeka.id"
+baseurl: "/hackathon"
+url:  "http://khairulanshar.github.io/"
 markdown: "kramdown"
 timezone: "Asia/Jakarta"
 defaults:
