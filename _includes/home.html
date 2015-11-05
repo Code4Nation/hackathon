@@ -1,88 +1,239 @@
-<div class="post">
-  <div class="merdeka">
-    <div class="container text-center" style="background-color:transparent;">
-      <div class="thumb">
-        <div class="content">
-          <div class="title">HACKATHON MERDEKA 2.0</div>
-          <h2><i class="fa fa-calendar"></i> 24 - 25 Oktober 2015</h2>
-          <h2><i class="fa fa-map-o"></i>Serentak di 28 Kota</h2>
-          <a href="{{ site.baseurl }}/registrasi" class="btn btn-danger">Daftar</a>
+<script>
+        jQuery(document).ready(function ($) {
+            
+            var jssor_1_options = {
+              $AutoPlay: true,
+              $SlideDuration: 800,
+              $SlideEasing: $Jease$.$OutQuint,
+              $ArrowNavigatorOptions: {
+                $Class: $JssorArrowNavigator$
+              },
+              $BulletNavigatorOptions: {
+                $Class: $JssorBulletNavigator$
+              }
+            };
+            
+            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+            
+            //responsive code begin
+            //you can remove responsive code if you don't want the slider scales while window resizes
+            function ScaleSlider() {
+                var refSize = jssor_1_slider.$Elmt.parentNode.clientWidth;
+                if (refSize) {
+                    refSize = Math.min(refSize, 1920);
+                    jssor_1_slider.$ScaleWidth(refSize);
+                }
+                else {
+                    window.setTimeout(ScaleSlider, 30);
+                }
+            }
+            ScaleSlider();
+            $(window).bind("load", ScaleSlider);
+            $(window).bind("resize", ScaleSlider);
+            $(window).bind("orientationchange", ScaleSlider);
+            //responsive code end
+        });
+    </script>
+<style>
+        body{
+		overflow-x:hidden;
+		}
+        /* jssor slider bullet navigator skin 05 css */
+        /*
+        .jssorb05 div           (normal)
+        .jssorb05 div:hover     (normal mouseover)
+        .jssorb05 .av           (active)
+        .jssorb05 .av:hover     (active mouseover)
+        .jssorb05 .dn           (mousedown)
+        */
+        .jssorb05 {
+            position: absolute;
+        }
+        .jssorb05 div, .jssorb05 div:hover, .jssorb05 .av {
+            position: absolute;
+            /* size of bullet elment */
+            width: 16px;
+            height: 16px;
+            background: url('img/b05.png') no-repeat;
+            overflow: hidden;
+            cursor: pointer;
+        }
+        .jssorb05 div { background-position: -7px -7px; }
+        .jssorb05 div:hover, .jssorb05 .av:hover { background-position: -37px -7px; }
+        .jssorb05 .av { background-position: -67px -7px; }
+        .jssorb05 .dn, .jssorb05 .dn:hover { background-position: -97px -7px; }
+
+        /* jssor slider arrow navigator skin 22 css */
+        /*
+        .jssora22l                  (normal)
+        .jssora22r                  (normal)
+        .jssora22l:hover            (normal mouseover)
+        .jssora22r:hover            (normal mouseover)
+        .jssora22l.jssora22ldn      (mousedown)
+        .jssora22r.jssora22rdn      (mousedown)
+        */
+        .jssora22l, .jssora22r {
+            display: block;
+            position: absolute;
+            /* size of arrow element */
+            width: 40px;
+            height: 58px;
+            cursor: pointer;
+            background: url('img/a22.png') center center no-repeat;
+            overflow: hidden;
+        }
+        .jssora22l { background-position: -10px -31px; }
+        .jssora22r { background-position: -70px -31px; }
+        .jssora22l:hover { background-position: -130px -31px; }
+        .jssora22r:hover { background-position: -190px -31px; }
+        .jssora22l.jssora22ldn { background-position: -250px -31px; }
+        .jssora22r.jssora22rdn { background-position: -310px -31px; }
+    </style>	
+
+<div id="jssor_1" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 1300px; height: 600px; overflow: hidden; visibility: hidden;">
+        <!-- Loading Screen -->
+        <div data-u="loading" style="position: absolute; top: 0px; left: 0px;">
+            <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
+            <div style="position:absolute;display:block;background:url('img/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
         </div>
-      </div>
-    </div>
-  </div>
-  <div class="module white module-top">
-    <img src="{{ site.baseurl }}/img/h2/info/peta.png" alt="" style="width:100%;"/>
-    <div class="container" style="color:#bb2526;padding-top:50px;">
-      <center><div class="xr"></div></center>
-      <article class="post-content text-center">
-        <h2>Hackathon Merdeka 2.0</h2>
-        <hr>
-        <p>Setelah sukses menyelenggarakan Hackathon Merdeka yang pertama pada bulan Agustus lalu, Code4Nation kembali mengadakan Hackathon Merdeka pada tanggal 24-25 Oktober serentak di 28 kota dan para pemenangnya akan dikumpulkan di Jakarta pada momen Hari Sumpah Pemuda 28 Oktober 2015.</p>
-        <p>Ayo bersama-sama kita berkontribusi pada negara untuk menyelesaikan masalah kependudukan!</p>
-      </article>
-    </div>
-    <div class='content-container  embed-container  maps'>
-      <!--<iframe style="pointer-events: none;" src="https://www.google.com/maps/d/u/5/embed?mid=z4pTcO-jW240.kNRfjhoSCo-s" class="iframe-map" scrolling="no" frameborder="0" marginheight="0" marginwidth="0"></iframe>-->
-      <iframe style="pointer-events: none;" src="http://hackathonmerdeka.petakita.com/?go=home.frame" class="iframe-map" scrolling="no" frameborder="0" marginheight="0" marginwidth="0"></iframe>
-    </div>
-    <div class="container" style="color:#bb2526;padding-top:30px;">
-	<a href="https://docs.google.com/spreadsheets/d/1wF0Ei4MoXOsS3cnCO2ltK-l7yryMr_93xboAVdJK69Y/pubhtml?gid=1305457528&single=true" target="fs">Jong dan PIC</a>
-	<iframe src="https://docs.google.com/spreadsheets/d/1wF0Ei4MoXOsS3cnCO2ltK-l7yryMr_93xboAVdJK69Y/pubhtml?gid=1305457528&amp;single=true&amp;widget=true&amp;headers=false" class="iframe-gdoc" frameborder="0" marginheight="0" marginwidth="0" style="height:500px;"></iframe>
-    </div>
-    <div class="container" style="color:#bb2526;padding-top:30px;">
-      <article class="post-content text-center">
-        Harapan kami, Hackathon Merdeka 2.0 bisa menjadi sebuah bentuk "Sumpah Pemuda" modern.
-        <br>
-        <h2 style="padding-top: 15px;">Merdeka Dengan Kode, MDK!</h2>
-      </article>
-    </div>
+        <div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 1300px; height: 600px; overflow: hidden;">
+            <div data-p="225.00" style="display: none;">
+                <img data-u="image" src="{{ site.baseurl }}/img/h3/slide/1.jpg" />
+            </div>
+            <div data-p="225.00" style="display: none;">
+                <img data-u="image" src="{{ site.baseurl }}/img/h3/slide/2.jpg" />
+            </div>
+            <div data-p="225.00" style="display: none;">
+                <img data-u="image" src="{{ site.baseurl }}/img/h3/slide/3.jpg" />
+            </div>
+            <div data-p="225.00" style="display: none;">
+                <img data-u="image" src="{{ site.baseurl }}/img/h3/slide/4.jpg" />
+            </div>
+            <div data-p="225.00" style="display: none;">
+                <img data-u="image" src="{{ site.baseurl }}/img/h3/slide/5.jpg" />
+            </div>
+            <div data-p="225.00" style="display: none;">
+                <img data-u="image" src="{{ site.baseurl }}/img/h3/slide/6.jpg" />
+            </div>
+            <div data-p="225.00" style="display: none;">
+                <img data-u="image" src="{{ site.baseurl }}/img/h3/slide/7.jpg" />
+            </div>
+            <div data-p="225.00" style="display: none;">
+                <img data-u="image" src="{{ site.baseurl }}/img/h3/slide/8.jpg" />
+            </div>
+            <div data-p="225.00" style="display: none;">
+                <img data-u="image" src="{{ site.baseurl }}/img/h3/slide/9.jpg" />
+            </div>
+            <div data-p="225.00" style="display: none;">
+                <img data-u="image" src="{{ site.baseurl }}/img/h3/slide/10.jpg" />
+            </div>
+            <div data-p="225.00" style="display: none;">
+                <img data-u="image" src="{{ site.baseurl }}/img/h3/slide/11.jpg" />
+            </div>
+            <div data-p="225.00" style="display: none;">
+                <img data-u="image" src="{{ site.baseurl }}/img/h3/slide/12.jpg" />
+            </div>
+            <div data-p="225.00" style="display: none;">
+                <img data-u="image" src="{{ site.baseurl }}/img/h3/slide/13.jpg" />
+            </div>
+            <div data-p="225.00" style="display: none;">
+                <img data-u="image" src="{{ site.baseurl }}/img/h3/slide/14.jpg" />
+            </div>
+            <div data-p="225.00" style="display: none;">
+                <img data-u="image" src="{{ site.baseurl }}/img/h3/slide/15.jpg" />
+            </div>
+            <div data-p="225.00" style="display: none;">
+                <img data-u="image" src="{{ site.baseurl }}/img/h3/slide/16.jpg" />
+            </div>
+            <div data-p="225.00" style="display: none;">
+                <img data-u="image" src="{{ site.baseurl }}/img/h3/slide/17.jpg" />
+            </div>
+            <div data-p="225.00" style="display: none;">
+                <img data-u="image" src="{{ site.baseurl }}/img/h3/slide/18.jpg" />
+            </div>
+            <div data-p="225.00" style="display: none;">
+                <img data-u="image" src="{{ site.baseurl }}/img/h3/slide/19.jpg" />
+            </div>
+            <div data-p="225.00" style="display: none;">
+                <img data-u="image" src="{{ site.baseurl }}/img/h3/slide/20.jpg" />
+            </div>
+            <div data-p="225.00" style="display: none;">
+                <img data-u="image" src="{{ site.baseurl }}/img/h3/slide/21.jpg" />
+            </div>
+            <div data-p="225.00" style="display: none;">
+                <img data-u="image" src="{{ site.baseurl }}/img/h3/slide/22.jpg" />
+            </div>
+            <div data-p="225.00" style="display: none;">
+                <img data-u="image" src="{{ site.baseurl }}/img/h3/slide/23.jpg" />
+            </div>
+            <div data-p="225.00" style="display: none;">
+                <img data-u="image" src="{{ site.baseurl }}/img/h3/slide/24.jpg" />
+            </div>
+            <div data-p="225.00" style="display: none;">
+                <img data-u="image" src="{{ site.baseurl }}/img/h3/slide/25.jpg" />
+            </div>
+            <div data-p="225.00" style="display: none;">
+                <img data-u="image" src="{{ site.baseurl }}/img/h3/slide/26.jpg" />
+            </div>
+            <div data-p="225.00" style="display: none;">
+                <img data-u="image" src="{{ site.baseurl }}/img/h3/slide/27.jpg" />
+            </div>
+            <div data-p="225.00" style="display: none;">
+                <img data-u="image" src="{{ site.baseurl }}/img/h3/slide/28.jpg" />
+            </div>
+            <div data-p="225.00" style="display: none;">
+                <img data-u="image" src="{{ site.baseurl }}/img/h3/slide/29.jpg" />
+            </div>
+            <div data-p="225.00" style="display: none;">
+                <img data-u="image" src="{{ site.baseurl }}/img/h3/slide/30.jpg" />
+            </div>
+            <div data-p="225.00" style="display: none;">
+                <img data-u="image" src="{{ site.baseurl }}/img/h3/slide/31.jpg" />
+            </div>            
+            
+        </div>
+        <!-- Bullet Navigator -->
+        <div data-u="navigator" class="jssorb05" style="bottom:16px;right:6px;" data-autocenter="1">
+            <!-- bullet navigator item prototype -->
+            <div data-u="prototype" style="width:16px;height:16px;"></div>
+        </div>
+        <!-- Arrow Navigator -->
+        <span data-u="arrowleft" class="jssora22l" style="top:123px;left:12px;width:40px;height:58px;" data-autocenter="2"></span>
+        <span data-u="arrowright" class="jssora22r" style="top:123px;right:12px;width:40px;height:58px;" data-autocenter="2"></span>        
+</div>
+<mark><small>Foto-foto di Istana hasil jepretan Pak Agus Suparto - Fotografer Istana.</small></mark>
+ <div class="row">
+    <div class="module white module-top">   
+		<div class="container" style="color:#bb2526;">  
+			<center><h2><strong>Apakah kamu:</strong></h2></center>
+			<center><div class="xr-red"></div></center>
+			<ul>
+			  <li>Letih mendengar berita tentang <strong>korupsi</strong> di Indonesia saat ini?</li>
+			  <li>Sering menemukan sistem IT di sekeliling kamu yang membuat kamu berpikir "Ah, andaikan Indonesia punya sistem seperti ini juga"?</li>
+			  <li>Ingin merubah Indonesia menjadi lebih baik?</li>
+			</ul>
+			<p>Jika poin di atas terasa akrab bagi kamu, kami mengajak kamu untuk membantu tanah air kita tercinta melalui Hackathon Merdeka 3.0!</p>      
+		</div>		
   </div>
   <div class="module red">
     <div class="container">
-      <article class="teaser">
-        <iframe src="https://www.youtube.com/embed/6wbYu-CmUXg" frameborder="0" allowfullscreen></iframe>
-      </article>
+	  <center><h2><strong>Kami memanggil teman-teman Diaspora Indonesia di seluruh dunia,<br>Indonesia membutuhkan kamu!</strong></h2>
+	  <center><div class="xr-white"></div></center>
+      <img src="{{ site.baseurl }}/img/h3/info/posterGlobal.png" alt="" style="width:100%;"/>
       <center><div class="xr-white"></div></center>
-      <article class="post-content text-center">
-        <h2>Hackathon Merdeka 1.0</h2>
-        <hr>
-        <br>
-        <b>5 aplikasi dari Tim-Tim Pemenang Hackathon Merdeka 1.0 </b>
-        <div class="row" style="padding-top:15px;">
-          <div class="col-lg-4 text-center">
-            <span>Pasar Laut - Tim Pasar Laut</span>
-            <iframe class="iframe-movie" src="https://www.youtube.com/embed/arlnzivE6t0" frameborder="0" allowfullscreen></iframe>
-          </div>
-          <div class="col-lg-4 text-center">
-            <span>Pantau Harga - Tim Coding Stelsel</span>
-            <iframe class="iframe-movie" src="https://www.youtube.com/embed/NfYMcVU_BYs" frameborder="0" allowfullscreen></iframe>
-          </div>
-          <div class="col-lg-4 text-center">
-            <span>Lima Kilo - Tim Enjel Salsabila</span>
-            <iframe class="iframe-movie" src="https://www.youtube.com/embed/pp-rneHU0kY" frameborder="0" allowfullscreen></iframe>
-          </div>
-        </div>
-        <div class="row" style="padding-top:15px;">
-          <div class="col-lg-2 text-center">&nbsp;</div>
-          <div class="col-lg-4 text-center">
-            <span>Cagar - Tim Alfa Orion dengan aplikasi</span>
-            <iframe class="iframe-movie" src="https://www.youtube.com/embed/rxrUSyNhCaU" frameborder="0" allowfullscreen></iframe>
-          </div>
-          <div class="col-lg-4 text-center">
-            <span>Curhat Harga - Tim Baculsoft</span>
-            <iframe class="iframe-movie" src="https://www.youtube.com/embed/OcliTU5wolA" frameborder="0" allowfullscreen></iframe>
-          </div>
-          <div class="col-lg-2 text-center">&nbsp;</div>
-        </div>
-      </article>
+	  <p>
+        Setelah Hackathon Merdeka 1.0 dan 2.0 berhasil menjaring partisipasi ribuan software developer dari seluruh penjuru Nusantara, kali ini kami berkerjasama dengan KPK dan ICW untuk mengajak diaspora Indonesia dari seluruh penjuru dunia untuk membangun solusi IT untuk membantu permasalahan korupsi dan integritas dalam masyarakat, institusi, dan pemerintahan Indonesia.        
+      </p> 
+      </center>	  
     </div>
   </div>
-  <div class="merdeka-div"></div>
-  <div class="module white" style="padding-top: 50px; padding-bottom: 0">
-    <div class="container">
+  
+  <div class="module white">
+    <div class="container" >
       <article class="post-content text-center" style="color:#bb2526;">
-        <div class="row" style="padding-top:30px;">
+	    <center><h2><strong>Apakah kamu punya ide untuk membantu menyelesaikan permasalahan korupsi dan membangun integritas dalam masyarakat, institusi, dan pemerintahan Indonesia?</strong></h2></center>
+        <center><div class="xr-red"></div></center>
+		<div class="row" style="padding-top:30px;">
           <div class="col-lg-3">
             <center><div class="img-circle-mdk"><i class="fa fa-bullhorn fa-4"></i></div></center>
             <article class="post-content text-center" style="color:#bb2526;">
@@ -95,21 +246,172 @@
               <h2>Ajak teman kamu dan bentuk tim</h2>
             </article>
           </div>
-          <div class="col-lg-3">
-            <center><div class="img-circle-mdk"><i class="fa fa-pencil-square-o"></i></div></center>
-            <article class="post-content text-center" style="color:#bb2526;">
-              <h2><a href="registrasi" style="color:#bb2526;text-decoration: none;">Daftar segera di sini</a></h2>
-            </article>
+		  <div class="col-lg-3">
+            <a href="{{site.baseurl}}#tema-dan-tantangan" style="text-decoration: none;">
+			<center><div class="img-circle-mdk"><i class="fa fa-leanpub fa-4"></i></div></center>
+            <article class="post-content text-center">
+              <h2 style="color:#bb2526;">Pelajari tema dan tantangan Hackathon Merdeka 3.0</h2>
+            </article></a>
           </div>
           <div class="col-lg-3">
-            <center><div class="img-circle-mdk"><i class="fa fa-leanpub fa-4"></i></div></center>
-            <article class="post-content text-center" style="color:#bb2526;">
-              <h2><a href="tema-dan-tantangan" style="color:#bb2526;text-decoration: none;">Pelajari tema dan tantangan Hackathon Merdeka 2.0</a></h2>
-            </article>
-          </div>
+            <a href="{{site.baseurl}}#registrasi" style="text-decoration: none;"><center><div class="img-circle-mdk"><i class="fa fa-pencil-square-o"></i></div></center>
+            <article class="post-content text-center" >
+              <h2 style="color:#bb2526;">Daftar segera di sini</h2>
+            </article></a>
+          </div>          
         </div>
+		<div class="row text-left" style="padding-top:30px;">
+		<center><h2><strong>Timeline Hackathon Merdeka 3.0</strong></h2></center>
+        <table class="table table-striped">
+		  <tbody><tr>
+			<td><b>2</b></td>
+
+			<td><b>November</b></td>
+			<td width="70%">Pendaftaran dibuka</td>
+		  </tr>
+		  <tr>
+			<td><b>2</b></td>
+			<td><b>Desember</b></td>
+			<td>Pendaftaran ditutup</td>
+		  </tr>
+		  <tr>
+			<td><b>5-6</b></td>
+			<td><b>Desember</b></td>
+			<td>Pelaksanaan Hackathon Merdeka 3.0 serentak di seluruh dunia</td>
+		  </tr>
+		  <tr>
+			<td><b>7-9</b></td>
+			<td><b>Desember</b></td>
+			<td>Penjurian dan penentuan pemenang</td>
+		  </tr>
+		  <tr>
+			<td><b>11</b></td>
+			<td><b>Desember</b></td>
+			<td>Pemberian hadiah bagi pemenang dalam ICW awarding night dalam rangka perayaan Hari Antikorupsi Sedunia</td>
+		  </tr>
+		</tbody></table>
+		</div>
       </article>
     </div>
   </div>
+  <div class="module red" id="tema-dan-tantangan">
+    <div class="container">
+	  <center><h2><strong>Tantangan apa yang bisa kita atasi melalui Hackathon Merdeka 3.0?</strong></h2></center>
+      <center><div class="xr-white"></div></center>
+	  <p>Korupsi adalah kejahatan luar biasa, sehingga upaya pemberantasan korupsi harus dilakukan secara luar biasa. Tujuan Hackathon Merdeka 3.0 adalah menghasilkan inovasi IT yang dapat membantu menciptakan sistem integritas, dan membantu menanamkan nilai-nilai integritas di masyarakat dan di sektor publik.</p>      
+      <p>Untuk terciptanya sistem integritas, Indonesia memerlukan:</p>
+	  <ol>
+		  <li>Institutional Restraints 
+			<ul>
+			  <li>Peradilan yang independen dan akuntable dengan penegak hukum yang adil dan independen</li>
+			</ul>
+		  </li>
+		  <li>Civil Society Participation 
+			<ul>
+			  <li>Adanya keterbukaan informasi publik</li>
+			  <li>Masyarakat dapat berpartisipasi dalam pengambilan keputusan publik</li>
+			  <li>Masyarakat dapat memonitor pelaksanaan pembangunan.</li>
+			</ul>
+		  </li>
+		  <li>Public Sector Management
+			<ul>
+			  <li>Meritokrasi rekruitmen dan kinerja PNS</li>
+			  <li>Manajemen anggaran yang profesional (transparan dan akuntable)</li>
+			  <li>Pelayanan umum yang prima</li>
+			</ul>
+		  </li>
+		  <li>Political Accountability
+			<ul>
+			  <li>Transparansi dan akuntabilitas pendanaan partai politik</li>
+			  <li>Pengaturan konflik kepentingan</li>
+			  <li>Pelaporan harta kekayaan</li>
+			</ul>
+		  </li>
+		</ol>
+		<p>Adapun sektor-sektor yang rawan dikorupsi adalah:</p>
+		<ol>
+		  <li>Pelayanan publik: pendidikan, kesehatan, administrasi kependudukan.</li>
+		  <li>Pengadaan barang dan jasa.</li>
+		  <li>Pajak dan transaksi ijin pertambangan.</li>
+		  <li>Kepabeanan dan bea cukai.</li>
+		  <li>Minyak dan gas.</li>
+		  <li>Penyelenggaraan haji.</li>
+		  <li>BUMN/BUMD.</li>
+		</ol>
+		<p>Baik sektor-sektor maupun kebutuhan untuk terciptanya sistem integritas sangat beragam dan membuka ruang luas bagi solusi inovatif dan kreatif dari kamu.</p>
+	</div>
+  </div>
+  <div class="module white">
+    <div class="container" style="color:#bb2526;">
+	  <center><h2><strong>Apa saja yang harus dikumpulkan?</strong></h2></center>	
+	  <center><div class="xr-red"></div></center>      
+	  <p>Metode pengumpulan akan diumumkan lebih lanjut, tapi tim kamu akan diharuskan untuk mengumpulkan hasil-hasil sebagai berikut:</p> 
+      <ol>
+		  <li>Rangkuman singkat tentang konsep aplikasi yang tim kamu bangun.</li>
+		  <li>Link ke hasil karya tim kamu. 
+			<ul>
+			  <li>Untuk mobile apps bisa dalam bentuk link ke file .apk atau iOS app yang ditaruh di file host eksternal seperti Dropbox atau Google Drive.</li>
+			  <li>Untuk web-based apps bisa dalam bentuk link ke hosted web app yang bisa diakses oleh publik. </li>
+			</ul>
+		  </li>
+		  <li>Link ke video YouTube yang berisikan video presentasi konsep yang tim kamu bangun dalam hackathon ini. Presentasi konsep ini dibatasi maksimal 5 menit.</li>
+		  <li>Link ke video YouTube yang berisikan video demonstrasi aplikasi yang kamu bangun dalam Hackathon Merdeka 3.0. Demo aplikasi ini dibatasi maksimal 5 menit.</li>
+		</ol>  
+    </div>
+  </div>
+  <div class="module red">
+    <div class="container">
+	  <center><h2><strong>Hadiah apa yang disediakan bagi para pemenang Hackathon Merdeka 3.0?</strong></h2>	
+	  <center><div class="xr-white"></div></center>      
+	  <p>Hackathon Merdeka 3.0 menyediakan total hadiah bagi para pemenang sebesar <strong>100 juta rupiah</strong>.</p></center>
+    </div>
+  </div>
+  <div class="module white" id="registrasi">
+    <div class="container" style="color:#bb2526;">
+	  <center><h2><strong>Pendaftaran</strong></h2></center>	
+	  <center><div class="xr-red"></div></center>      
+	  <iframe src="https://docs.google.com/forms/d/1UfCJCa4j5fdAWCAAQYik3Z7sdG2anZXbkjF3alKUA4Y/viewform?embedded=true" class="iframe-gdoc" frameborder="0" marginheight="0" marginwidth="0"></iframe>
+    </div>
+  </div>
+  <div class="module red" id="peraturan-dan-panduan">
+    <div class="container">
+	  <center><h2><strong>Bagaimana peraturan Hackathon Merdeka 3.0?</strong></h2></center>	
+	  <center><div class="xr-white"></div></center>      
+	  <p>Hackathon adalah sesi pendek dimana kamu bersama tim kamu bisa membangun karya IT untuk menjadi solusi permasalahan tertentu. Dalam Hackathon Merdeka 3.0 ini, kamu bisa:</p>
+	  <ul>
+		  <li>Membentuk tim dengan jumlah anggota maksimal 4 orang per tim.</li>
+		  <li>Membangun karya IT dalam bentuk web app dan/atau mobile app.</li>
+		  <li>Pada tanggal 5-6 Desember 2015, secara serentak dengan semua tim dari seluruh dunia, membangun dan menyelesaikan karya IT kamu.</li>
+		  <li>Tidak diwajibkan untuk hadir di lokasi fisik hackathon. Kamu bisa mengadakan remote hackathon di lokasi tim kamu sendiri.</li>
+		  <li>Menampilkan video broadcast dari kegiatan hackathon tim kamu melalui Google Hangout.</li>
+		  <li>Mengumpulkan hasil karya IT dari tim kamu sebelum 6 Desember, 23:59, UTC-4. <a href="http://www.timeanddate.com/worldclock/fixedtime.html?msg=Hackathon+MDK+3.0+-+Batas+Akhir+Pengumpulan&amp;iso=20151206T235959&amp;p1=3918" style="color:white;">(klik di sini untuk melihat batas pengumpulan di zona waktu kamu)</a></li>
+	  </ul>
+	  <p>Untuk beberapa kota dan negara, kami akan memfasilitasi lokasi fisik untuk Hackathon Merdeka 3.0. Kami akan mengumumkan lokasi fisik ini seiring dengan berjalannya waktu. Jika kota kamu memiliki lokasi fisik, kami sangat menganjurkan agar tim kamu berkumpul di lokasi tersebut, karena selain kamu bisa membangun jaringan dengan diaspora Indonesia di kota kamu, kamu bisa bertukar pikiran secara langsung dengan diaspora lainnya dalam pembangunan karya IT kamu.</p>		
+	</div>
+  </div>
+  <div class="module white" id="registrasi">
+    <div class="container" style="color:#bb2526;">
+	  <center><h2><strong>Bagaimana dengan proses penjurian dan dewan juri?</strong></h2>	
+	  <center><div class="xr-red"></div></center>      
+	  <p>Penjurian akan dilakukan pada 7-9 Desember 2015 oleh dewan juri yang terdiri dari elemen pemerintah, KPK, ICW, dan pakar-pakar IT.</p></center>
+	</div>
+  </div>
+  <div class="module red" id="registrasi">
+    <div class="container">
+	  <center><h2><strong>Pertanyaan yang sering diajukan?</strong></h2></center>	
+	  <center><div class="xr-white"></div></center>      
+	  <p><strong>Q: Kenapa Hackathon Merdeka 3.0 ini tidak mewajibkan adanya lokasi fisik seperti Hackathon Merdeka sebelumnya?</strong><br>
+      <strong>A</strong>: Karena diaspora Indonesia di berbagai penjuru dunia memiliki situasi yang sangat beragam, mewajibkan adanya lokasi fisik di setiap negara tidaklah memungkinkan. Sebagian negara atau kota memiliki jumlah diaspora yang sedikit, dan sangat menyulitkan dari segi sumber daya yang tersedia jika mereka harus menyelenggarakan hackathon fisik juga. Selain itu, berdasarkan masukan dari rekan-rekan diaspora juga, cukup banyak tim yang berencana untuk melakukan kolaborasi lintas negara.</p>
+	  <p><strong>Q: Apakah hak cipta karya IT yang kami bangun dalam Hackathon ini jadi milik ICW, KPK, atau panitia penyelenggara?</strong><br>
+		Kami sangat menghargai Hak Kekayaan Intelektual setiap tim yang bergabung menjadi peserta Hackathon Merdeka 3.0. Hak cipta dari karya IT yang dibangun oleh tim peserta tetap menjadi milik tim peserta. Karena tujuan dari hackathon ini adalah karya IT yang bisa digunakan oleh masyarakat atau institusi di Indonesia, kami hanya akan meminta tim peserta untuk memperbolehkan karya yang mereka bangun dalam hackathon ini untuk digunakan secara bebas dan tanpa biaya.</p>
+	  <p><strong>Q: Apa boleh ada teman non-Indonesia yang bergabung dengan tim saya?</strong><br>
+		<strong>A</strong>: Adalah suatu inisiatif sangat bagus jika ada orang non-Indonesia yang ingin membantu Indonesia melalui Hackathon Merdeka 3.0 ini. Kami mengakomodasi inisiatif bagus ini dengan cara memperbolehkan satu tim berisikan Warga Negara Indonesia dan Warga Negara Asing. Namun demikian, karena kami ingin solusi yang dibangun dalam Hackathon Merdeka 3.0 ini relevan dengan budaya dan situasi di Indonesia, kami mensyaratkan tim peserta harus terdiri dari minimal satu orang Warga Negara Indonesia.</p>
+	  <p><strong>Q: Bagaimana jika tim saya berisikan kolaborasi lintas negara, apakah diperbolehkan?</strong><br>
+		<strong>A</strong>: Ya, kolaborasi lintas negara dalam satu tim diperbolehkan. Untuk tim dengan anggota yang berasal dari berbagai negara, bisa mengikuti acara Hackathon Merdeka 3.0 ini secara remote.</p>
+	  <p><strong>Q: Saya ingin membuat solusi IT dalam bentuk IoT (Internet of Things) atau menggunakan wearable device, apakah diperbolehkan?</strong><br>
+		<strong>A</strong>: Sayangnya, karena pengujian dan penilaian karya IT hardware-based untuk skala global dalam waktu 2-3 hari tidaklah memungkinkan, kami tidak menerima pengumpulan karya IT hardware-based.  </p>
+	</div>
+  </div>
   {% include partners.html %}
-</div>
+</div>  
+

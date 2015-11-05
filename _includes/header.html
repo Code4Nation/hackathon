@@ -4,7 +4,7 @@
   }
 </script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<nav class="navbar" style="z-index:9999999999">
+<nav class="navbar navbar-fixed-top" style="z-index:9999999999;background-color:white;">
             <div class="container">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -13,21 +13,18 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="/"><img src="{{site.baseurl}}/img/MDK.png" height="48px"></a>
+                    <a class="navbar-brand" href="{{site.baseurl}}"><img src="{{site.baseurl}}/img/MDK.png" height="48px"></a>
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav navbar-right">
-                       {% assign pages = site.pages | sort:"order" %}
-						{% for page in pages %}
-						  {% if page.title %}
-						      {% if page.order <= 3 %}
-							  <li><a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
-							  {% endif %}
-						  {% endif %}
-						{% endfor %}
+                        <li><a class="page-link" href="{{site.baseurl}}">Teras</a></li>
+					    <li><a class="page-link" href="{{site.baseurl}}#registrasi">Registrasi</a></li>
+						<li><a class="page-link" href="{{site.baseurl}}#tema-dan-tantangan">Tema &amp; Tantangan</a></li>
 						<li class="dropdown">
 						  <a href="javascript:" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true"><i class="fa fa-circle"></i><i class="fa fa-circle"></i><i class="fa fa-circle"></i></a>
 						  <ul class="dropdown-menu">
+						    <li><a class="page-link-child" href="{{site.baseurl}}#peraturan-dan-panduan">Peraturan &amp; Panduan</a></li>
+							<li><a class="page-link-child" href="{{site.baseurl}}#pertanyaan-yang-sering-diajukan">Pertanyaan yang Sering diajukan</a></li>
 							{% assign pages = site.pages | sort:"order" %}
 							{% for page in pages %}
 							  {% if page.title %}
@@ -42,3 +39,4 @@
                 </div>
             </div>
 </nav>
+<div style="width:100%;height:65px;">&nbsp;</div>
