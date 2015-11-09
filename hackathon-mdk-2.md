@@ -10,7 +10,8 @@ Sabtu dan Minggu, tanggal 14 dan 15 November 2015, akan diadakan final Hackathon
 
 Rundown sementara:
 
-14 November 2015
+### 14 November 2015
+
 - 08.00 - 09.00 : Registrasi di Jakdiva
 - 09.00 - 09.15 : Sambutan dari panitia
 - 09.15 - 12.00 : Diskusi bersama
@@ -19,7 +20,8 @@ Rundown sementara:
 - 18:00 - 19:00 : ISOMA
 - 19:00 - 20:00 : Networking
 
-15 November 2015
+### 15 November 2015
+
 - 08.00 - 09.00 : Persiapan
 - 09.00 - 09.15 : Pembukaan
 - 09.15 - 12.00 : Penjurian
