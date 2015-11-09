@@ -12,7 +12,7 @@ Rundown sementara:
 
 ### 14 November 2015
 
-- 08.00 - 09.00 : Registrasi di Jakdiva
+- 08.00 - 09.00 : Registrasi di penginapan
 - 09.00 - 09.15 : Sambutan dari panitia
 - 09.15 - 12.00 : Diskusi bersama
 - 12.00 - 13.30 : ISOMA
