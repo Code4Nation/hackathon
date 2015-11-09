@@ -6,7 +6,7 @@ order: 7
 
 ##Final Hackathon Merdeka 2.0
 
-Minggu tanggal 15 November 2015 akan diadakan final Hackathon Merdeka 2.0 di Menara Multimedia Telkom Jalan Kebon Sirih.
+Sabtu dan Minggu, tanggal 14 dan 15 November 2015, akan diadakan final Hackathon Merdeka 2.0 di Menara Multimedia Telkom Jalan Kebon Sirih.
 
 Rundown sementara:
 
